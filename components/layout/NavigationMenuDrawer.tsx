@@ -2,19 +2,12 @@ import { X } from "lucide-react";
 import Link from "next/link";
 
 interface Props {
+	navLinks: Array<{ href: string; label: string }>;
 	isOpen: boolean;
 	onClose: () => void;
 }
 
-const NavigationMenuDrawer = ({ isOpen, onClose }: Props) => {
-	const navLinks = [
-		{ href: "/", label: "Home" },
-		{ href: "/about", label: "About" },
-		{ href: "/skills", label: "Skills" },
-		{ href: "/products", label: "Products" },
-		{ href: "/contact", label: "Contact" },
-	];
-
+const NavigationMenuDrawer = ({ navLinks, isOpen, onClose }: Props) => {
 	return (
 		<div
 			className={
