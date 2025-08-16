@@ -33,7 +33,7 @@ const NavigationMenuDrawer = ({ navLinks, isOpen, onClose }: Props) => {
 						<Link
 							key={link.href}
 							href={link.href}
-							className="block text-gray-700 hover:bg-gray-200 rounded-lg px-3 py-2 text-lg font-medium"
+							className="block text-gray-700 hover:text-blue-500 rounded-lg px-3 py-2 text-lg font-medium transition-colors"
 							onClick={onClose}
 						>
 							{link.label}
