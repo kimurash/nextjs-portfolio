@@ -13,10 +13,14 @@ const NavigationHeader = ({ navLinks, className = "", onItemClick }: Props) => {
 				<Link
 					key={link.href}
 					href={link.href}
-					className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-xl font-medium transition-colors duration-200"
+					className="text-gray-700 hover:text-blue-500 px-3 py-2 text-xl font-medium transition-all relative group hover:-translate-y-0.5"
 					onClick={onItemClick}
 				>
 					{link.label}
+					<span
+						aria-hidden="true"
+						className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 opacity-0 group-hover:opacity-100 transition-opacity"
+					></span>
 				</Link>
 			))}
 		</nav>
