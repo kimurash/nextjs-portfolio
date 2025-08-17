@@ -10,6 +10,7 @@ const SocialLinks = () => {
 					rel="noopener noreferrer"
 					fgColor="white"
 					bgColor="#1f2937"
+					aria-label="GitHubプロフィールを開く"
 				/>
 				<SocialIcon
 					url="https://x.com/XeRn1227"
@@ -17,6 +18,7 @@ const SocialLinks = () => {
 					rel="noopener noreferrer"
 					fgColor="white"
 					bgColor="#1f2937"
+					aria-label="X（旧Twitter）プロフィールを開く"
 				/>
 			</div>
 		</div>
