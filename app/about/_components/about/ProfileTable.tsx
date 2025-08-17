@@ -5,6 +5,7 @@ const ProfileTable = () => {
 				<div className="w-full max-w-2xl">
 					<div className="overflow-x-auto">
 						<table className="w-full border-collapse">
+							<caption className="sr-only">shunseiのプロフィール</caption>
 							<tbody>
 								<tr className="border-b border-gray-200">
 									<th className="text-left py-2 pr-6 font-semibold text-gray-800 whitespace-nowrap">
