@@ -34,7 +34,7 @@ const EducationHistory = () => {
 						<time className="text-sm font-normal leading-none text-gray-500">
 							{entry.period}
 						</time>
-						<div className="flex items-center gap-6 mt-1">
+						<div className="flex items-center gap-6">
 							<div className="flex-shrink-0">
 								<Image
 									src={entry.image.src}
