@@ -3,7 +3,7 @@ import Image from "next/image";
 const WorkHistory = () => {
 	const workHistory = [
 		{
-			period: "2025年8月中旬〜2024年10月中旬",
+			period: "2025年8月中旬〜2025年10月中旬",
 			title: "株式会社スリーシェイク",
 			description: "期限付きインターンシップ",
 			image: {
