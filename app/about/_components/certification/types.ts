@@ -1,16 +1,9 @@
-export type CertificationCardHeaderColor =
-	| "blue"
-	| "cyan"
-	| "emerald"
-	| "purple"
-	| "yellow";
-
 export interface Certification {
 	title: string;
 	issuer: string;
 	acquiredAt: string;
 	expiresAt?: string;
-	color: CertificationCardHeaderColor;
+	color: string;
 	icon: {
 		src: string;
 		width: number;
