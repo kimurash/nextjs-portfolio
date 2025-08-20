@@ -5,7 +5,7 @@ export const certifications: Certification[] = [
 		title: "珠算検定 四段",
 		issuer: "全国珠算教育連盟",
 		acquiredAt: "2014年4月",
-		expiresAt: "無期限",
+		expiresAt: undefined,
 		color: "purple",
 		icon: {
 			src: "/image/certification/abacus.jpeg",
