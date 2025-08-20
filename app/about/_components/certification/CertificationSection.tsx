@@ -13,7 +13,11 @@ export default function CertificationSection() {
 					</h2>
 				</div>
 
-				<div className="grid grid-cols-1 lg:grid-cols-[repeat(2,auto)] xl:grid-cols-[repeat(3,auto)] gap-8 justify-center justify-items-center">
+				<div
+					className="
+					grid grid-cols-1 lg:grid-cols-[repeat(2,auto)] xl:grid-cols-[repeat(3,auto)]
+					gap-8 justify-center justify-items-center"
+				>
 					{certifications.map((certification) => (
 						<CertificationCard
 							key={certification.title}
