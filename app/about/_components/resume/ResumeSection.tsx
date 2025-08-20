@@ -1,6 +1,6 @@
 import { FileText } from "lucide-react";
-import EducationHistory from "./EducationHistory";
-import WorkHistory from "./WorkHistory";
+import EducationHistoryTimeline from "./EducationHistoryTimeline";
+import WorkHistoryTimeline from "./WorkHistoryTimeline";
 
 const ResumeSection = () => {
 	return (
@@ -12,8 +12,8 @@ const ResumeSection = () => {
 						Resume
 					</h2>
 				</div>
-				<EducationHistory />
-				<WorkHistory />
+				<EducationHistoryTimeline />
+				<WorkHistoryTimeline />
 			</div>
 		</section>
 	);

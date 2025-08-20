@@ -1,29 +1,7 @@
 import Image from "next/image";
+import { educationHistory } from "./constants";
 
-const EducationHistory = () => {
-	const educationHistory = [
-		{
-			period: "2024年4月〜2026年3月（予定）",
-			title: "京都工芸繊維大学大学院 博士前期課程",
-			description: "工芸科学科 / 設計工学域 / 情報工学専攻",
-			image: {
-				src: "/image/resume/kit.jpg",
-				width: 1030,
-				height: 615,
-			},
-		},
-		{
-			period: "2020年4月〜2024年3月",
-			title: "京都工芸繊維大学 学士課程",
-			description: "工芸科学科 / 設計工学域 / 情報工学課程",
-			image: {
-				src: "/image/resume/kit.jpg",
-				width: 1030,
-				height: 615,
-			},
-		},
-	];
-
+const EducationHistoryTimeline = () => {
 	return (
 		<div className="max-w-4xl mx-auto">
 			<h3 className="text-2xl font-semibold text-gray-900 mb-2">Education</h3>
@@ -60,4 +38,4 @@ const EducationHistory = () => {
 	);
 };
 
-export default EducationHistory;
+export default EducationHistoryTimeline;
