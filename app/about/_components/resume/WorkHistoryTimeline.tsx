@@ -24,7 +24,18 @@ const WorkHistoryTimeline = () => {
 							</div>
 							<div className="flex-1 flex flex-col justify-center">
 								<h4 className="text-lg font-semibold text-gray-900 mb-1">
-									{entry.title}
+									{entry.url ? (
+										<a
+											href={entry.url}
+											target="_blank"
+											rel="noopener noreferrer"
+											className="text-blue-500 hover:text-blue-700 transition-colors"
+										>
+											{entry.title}
+										</a>
+									) : (
+										entry.title
+									)}
 								</h4>
 								<p className="text-base font-normal text-gray-700 whitespace-pre-line">
 									{entry.description}

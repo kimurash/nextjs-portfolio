@@ -6,7 +6,7 @@ export const certifications: Certification[] = [
 		issuer: "全国珠算教育連盟",
 		acquiredAt: "2014年4月",
 		expiresAt: undefined,
-		color: "purple",
+		color: "bg-purple-500",
 		icon: {
 			src: "/image/certification/abacus.jpeg",
 			width: 225,
@@ -19,7 +19,7 @@ export const certifications: Certification[] = [
 		issuer: "日本英語検定協会",
 		acquiredAt: "2018年6月",
 		expiresAt: undefined,
-		color: "yellow",
+		color: "bg-yellow-600",
 		icon: {
 			src: "/image/certification/eiken.png",
 			width: 1200,
@@ -32,7 +32,7 @@ export const certifications: Certification[] = [
 		issuer: "情報処理推進機構",
 		acquiredAt: "2022年4月",
 		expiresAt: undefined,
-		color: "blue",
+		color: "bg-blue-600 opacity-80",
 		icon: {
 			src: "/image/certification/ipass.png",
 			width: 868,
@@ -45,7 +45,7 @@ export const certifications: Certification[] = [
 		issuer: "日本ディープラーニング協会",
 		acquiredAt: "2023年3月",
 		expiresAt: undefined,
-		color: "blue",
+		color: "bg-blue-600 opacity-80",
 		icon: {
 			src: "/image/certification/generalist.png",
 			width: 800,
@@ -58,7 +58,7 @@ export const certifications: Certification[] = [
 		issuer: "情報処理推進機構",
 		acquiredAt: "2023年5月",
 		expiresAt: undefined,
-		color: "blue",
+		color: "bg-blue-600 opacity-80",
 		icon: {
 			src: "/image/certification/ipa.jpg",
 			width: 1280,
@@ -71,7 +71,7 @@ export const certifications: Certification[] = [
 		issuer: "国際ビジネスコミュニケーション協会",
 		acquiredAt: "2023年8月",
 		expiresAt: undefined,
-		color: "yellow",
+		color: "bg-yellow-600",
 		icon: {
 			src: "/image/certification/toeic.jpg",
 			width: 430,
@@ -84,7 +84,7 @@ export const certifications: Certification[] = [
 		issuer: "情報処理推進機構",
 		acquiredAt: "2024年7月",
 		expiresAt: undefined,
-		color: "blue",
+		color: "bg-blue-600 opacity-80",
 		icon: {
 			src: "/image/certification/ipa.jpg",
 			width: 1280,
@@ -97,7 +97,7 @@ export const certifications: Certification[] = [
 		issuer: "株式会社ゆめみ",
 		acquiredAt: "2025年2月",
 		expiresAt: "2028年2月",
-		color: "cyan",
+		color: "bg-cyan-600",
 		icon: {
 			src: "/image/certification/yumemi.jpg",
 			width: 335,
@@ -110,7 +110,7 @@ export const certifications: Certification[] = [
 		issuer: "資産運用検定協会",
 		acquiredAt: "2025年3月",
 		expiresAt: undefined,
-		color: "emerald",
+		color: "bg-emerald-600",
 		icon: {
 			src: "/image/certification/amc.png",
 			width: 104,
