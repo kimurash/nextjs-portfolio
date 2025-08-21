@@ -40,7 +40,7 @@ const ProfileTable = () => {
 											href="https://vega.is.kit.ac.jp/"
 											target="_blank"
 											rel="noopener noreferrer"
-											className="text-blue-600 hover:text-blue-800 underline"
+											className="text-blue-600 hover:text-blue-800"
 										>
 											情報知能システム研究室
 										</a>
@@ -79,7 +79,7 @@ const ProfileTable = () => {
 											href="https://www.aquatan.studio/"
 											target="_blank"
 											rel="noopener noreferrer"
-											className="text-blue-600 hover:text-blue-800 underline"
+											className="text-blue-600 hover:text-blue-800"
 										>
 											あくあたん工房
 										</a>
@@ -88,7 +88,7 @@ const ProfileTable = () => {
 											href="https://www.kitcc.org/"
 											target="_blank"
 											rel="noopener noreferrer"
-											className="text-blue-600 hover:text-blue-800 underline"
+											className="text-blue-600 hover:text-blue-800"
 										>
 											コンピュータ部
 										</a>
