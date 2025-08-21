@@ -1,13 +1,12 @@
 import Image from "next/image";
 import { workHistory } from "./constants";
-import type { WorkExperience } from "./types";
 
 const WorkHistoryTimeline = () => {
 	return (
 		<div className="max-w-4xl mx-auto">
 			<h3 className="text-2xl font-semibold text-gray-900 mb-2">Work</h3>
 			<ol className="relative border-s border-blue-200">
-				{workHistory.map((entry: WorkExperience) => (
+				{workHistory.map((entry) => (
 					<li key={entry.period} className="mb-4 ms-4">
 						<div className="absolute w-3 h-3 bg-blue-300 rounded-full mt-1.5 -start-1.5"></div>
 						<time className="text-sm font-normal leading-none text-gray-500">
