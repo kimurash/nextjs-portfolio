@@ -13,7 +13,7 @@ import {
 const SkillsPage = () => {
 	return (
 		<div className="min-h-screen bg-blue-50">
-			<div className="container mx-auto px-24 py-8">
+			<div className="container mx-auto px-10 lg:px-24 py-8">
 				<div className="mb-10 text-center">
 					<h1 className="text-4xl font-bold text-gray-900">
 						<Code className="inline mr-2 mb-1" size={35} />
