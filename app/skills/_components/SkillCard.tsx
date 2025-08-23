@@ -35,7 +35,7 @@ const SkillCard = ({ name, icon, proficiency, tags }: Props) => {
 				{tags.map((tag) => (
 					<span
 						key={`${name}-${tag}`}
-						className="px-4 py-1.5 text-xs bg-gray-100 text-gray-600 rounded-full border-2 border-gray-400"
+						className="px-4 py-1.5 text-sm bg-gray-100 text-gray-800 rounded-full border border-gray-400"
 					>
 						{tag}
 					</span>

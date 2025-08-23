@@ -8,7 +8,7 @@ const ProficiencyGuide = () => {
 				レベルの目安
 			</h2>
 			<div className="bg-white rounded-lg border border-gray-200 shadow-sm p-6 max-w-4xl mx-auto">
-				<div className="space-y-3 overflow-x-auto">
+				<div className="space-y-2 overflow-x-auto">
 					{proficiencyDescriptions.map((description, index) => (
 						<div
 							key={`level-${index}/${MAX_PROFICIENCY}}`}
