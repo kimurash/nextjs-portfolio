@@ -195,7 +195,7 @@ export const databases: TechnicalSkill[] = [
 	{
 		name: "Supabase",
 		icon: "https://skillicons.dev/icons?i=supabase&theme=light",
-		proficiency: 3,
+		proficiency: 4,
 		tags: ["趣味", "ハッカソン"],
 	},
 ];
