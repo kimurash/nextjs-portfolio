@@ -10,7 +10,7 @@ interface Props {
 
 const SkillCard = ({ name, icon, proficiency, tags }: Props) => {
 	return (
-		<div className="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow w-66">
+		<div className="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-lg hover:border-gray-500 transition-all duration-200 w-64">
 			<div className="flex items-start space-x-4 p-4">
 				<div className="w-14 h-14 flex-shrink-0">
 					<Image
@@ -35,7 +35,7 @@ const SkillCard = ({ name, icon, proficiency, tags }: Props) => {
 				{tags.map((tag) => (
 					<span
 						key={`${name}-${tag}`}
-						className="px-4 py-1.5 text-sm bg-gray-100 text-gray-800 rounded-full border border-gray-400"
+						className="px-4 py-1 text-sm bg-gray-100 text-gray-800 rounded-full border border-gray-400"
 					>
 						{tag}
 					</span>
