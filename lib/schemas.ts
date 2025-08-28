@@ -6,7 +6,7 @@ export const contactFormSchema = z.object({
 		.min(1, { message: "お名前を入力してください" })
 		.max(30, { message: "お名前は30文字以内で入力してください" }),
 	email: z
-		// biome-ignore lint: preference
+		// biome-ignore format: preference
 		.email({ message: "有効なメールアドレスを入力してください" }),
 	subject: z
 		.string()
