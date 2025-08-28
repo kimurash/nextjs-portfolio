@@ -37,7 +37,7 @@ const ContactForm = () => {
 		if (!executeRecaptcha) {
 			toast.error("reCAPTCHAが利用できません", {
 				closeButton: true,
-				icon: <CircleX size={24} className="text-red-500" />,
+				icon: <CircleX size={22} className="text-red-500" />,
 			});
 			return;
 		}
@@ -48,14 +48,14 @@ const ContactForm = () => {
 		if (!result.success) {
 			toast.error(result.error, {
 				closeButton: true,
-				icon: <MailWarning size={24} className="text-red-500" />,
+				icon: <MailWarning size={22} className="text-red-500" />,
 			});
 			return;
 		}
 
 		toast.success("お問い合わせが送信されました！", {
 			closeButton: true,
-			icon: <CircleCheck size={24} className="text-green-500" />,
+			icon: <CircleCheck size={22} className="text-green-500" />,
 		});
 		form.reset();
 	}
