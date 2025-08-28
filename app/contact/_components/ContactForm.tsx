@@ -16,7 +16,8 @@ import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 
 import { contactFormSchema, type ContactFormValues } from "@/lib/schemas";
-import { CircleCheck } from "lucide-react";
+import { CircleCheck, MailWarning } from "lucide-react";
+import { sendContactFormEmail } from "../actions";
 
 const ContactForm = () => {
 	const form = useForm<ContactFormValues>({
@@ -30,8 +31,15 @@ const ContactForm = () => {
 	});
 
 	async function onSubmit(values: ContactFormValues) {
-		// TODO: メール送信ロジック
-		console.log(values);
+		const result = await sendContactFormEmail(values);
+
+		if (!result.success) {
+			toast.error(result.error, {
+				closeButton: true,
+				icon: <MailWarning size={24} className="text-red-500" />,
+			});
+			return;
+		}
 
 		toast.success("お問い合わせが送信されました！", {
 			closeButton: true,
