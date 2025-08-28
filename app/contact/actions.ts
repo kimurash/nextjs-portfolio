@@ -5,8 +5,21 @@ import { Resend } from "resend";
 import ContactFormEmailTemplate from "./_components/ContactFormEmailTemplate";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+const reCaptchaSecretKey = process.env.RECAPTCHA_SECRET_KEY;
 
-export async function sendContactFormEmail(formData: ContactFormValues) {
+export async function sendContactFormEmail(
+	formData: ContactFormValues,
+	reCaptchaToken: string,
+) {
+	const reCaptchaVerified = await verifyReCaptcha(reCaptchaToken);
+
+	if (!reCaptchaVerified) {
+		return {
+			success: false,
+			error: "reCAPTCHAの検証に失敗しました",
+		};
+	}
+
 	const result = contactFormSchema.safeParse(formData);
 
 	if (!result.success) {
@@ -34,4 +47,25 @@ export async function sendContactFormEmail(formData: ContactFormValues) {
 	}
 
 	return { success: true, data };
+}
+
+async function verifyReCaptcha(reCaptchaToken: string) {
+	const reCaptchaResponse = await fetch(
+		"https://www.google.com/recaptcha/api/siteverify",
+		{
+			method: "POST",
+			headers: {
+				"Content-Type": "application/x-www-form-urlencoded",
+			},
+			body: `secret=${reCaptchaSecretKey}&response=${reCaptchaToken}`,
+		},
+	);
+
+	const reCaptchaResult = await reCaptchaResponse.json();
+
+	if (!reCaptchaResult.success) {
+		console.error(reCaptchaResult);
+	}
+
+	return reCaptchaResult.success;
 }

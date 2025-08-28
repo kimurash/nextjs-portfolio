@@ -16,7 +16,8 @@ import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 
 import { contactFormSchema, type ContactFormValues } from "@/lib/schemas";
-import { CircleCheck, MailWarning } from "lucide-react";
+import { CircleCheck, CircleX, MailWarning } from "lucide-react";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { sendContactFormEmail } from "../actions";
 
 const ContactForm = () => {
@@ -30,8 +31,19 @@ const ContactForm = () => {
 		},
 	});
 
+	const { executeRecaptcha } = useGoogleReCaptcha();
+
 	async function onSubmit(values: ContactFormValues) {
-		const result = await sendContactFormEmail(values);
+		if (!executeRecaptcha) {
+			toast.error("reCAPTCHAが利用できません", {
+				closeButton: true,
+				icon: <CircleX size={24} className="text-red-500" />,
+			});
+			return;
+		}
+
+		const reCaptchaToken = await executeRecaptcha("contact_form_submit");
+		const result = await sendContactFormEmail(values, reCaptchaToken);
 
 		if (!result.success) {
 			toast.error(result.error, {
