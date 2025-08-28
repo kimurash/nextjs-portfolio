@@ -1,5 +1,6 @@
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
+import { Toaster } from "@/components/ui/sonner";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -19,6 +20,7 @@ export default function RootLayout({
 				<Header />
 				<main className="flex-1">{children}</main>
 				<Footer />
+				<Toaster />
 			</body>
 		</html>
 	);

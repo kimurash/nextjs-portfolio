@@ -11,7 +11,7 @@ const NavigationMenuDrawer = ({ navLinks, isOpen, onClose }: Props) => {
 	return (
 		<div
 			className={
-				// biome-ignore lint: preference
+				// biome-ignore format: preference
 				`fixed top-0 right-0 h-full w-64 bg-white/95 backdrop-blur-sm shadow-xl z-50 transform transition-transform duration-500 ease-in-out md:hidden
 				${isOpen ? "translate-x-0" : "translate-x-full"}`
 			}
