@@ -65,7 +65,7 @@ async function verifyReCaptcha(reCaptchaToken: string) {
 	const reCaptchaResult = await reCaptchaResponse.json();
 
 	if (!reCaptchaResult.success) {
-		console.error(reCaptchaResult);
+		console.error(reCaptchaResult["error-codes"]);
 	}
 
 	return reCaptchaResult.success;
