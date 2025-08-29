@@ -5,7 +5,8 @@ import { Resend } from "resend";
 import ContactFormEmailTemplate from "./_components/ContactFormEmailTemplate";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-const reCaptchaSecretKey = process.env.RECAPTCHA_SECRET_KEY;
+// biome-ignore lint/style/noNonNullAssertion: negligence
+const reCaptchaSecretKey = process.env.RECAPTCHA_SECRET_KEY!;
 
 export async function sendContactFormEmail(
 	formData: ContactFormValues,
@@ -57,7 +58,7 @@ async function verifyReCaptcha(reCaptchaToken: string) {
 			headers: {
 				"Content-Type": "application/x-www-form-urlencoded",
 			},
-			body: `secret=${reCaptchaSecretKey}&response=${reCaptchaToken}`,
+			body: `secret=${encodeURIComponent(reCaptchaSecretKey)}&response=${encodeURIComponent(reCaptchaToken)}`,
 		},
 	);
 
