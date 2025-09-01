@@ -8,7 +8,7 @@ interface ProductCardProps {
 
 const ProductCard = ({ product }: ProductCardProps) => {
 	return (
-		<div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 hover:scale-102 border border-gray-200 max-w-sm mx-auto md:mx-0">
+		<div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 hover:scale-[1.02] border border-gray-200 max-w-sm mx-auto md:mx-0">
 			<div className="relative overflow-hidden border-b-2 border-gray-200">
 				<Image
 					src={product.image}
