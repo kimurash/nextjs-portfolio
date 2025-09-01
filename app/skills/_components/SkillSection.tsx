@@ -1,5 +1,5 @@
+import type { TechnicalSkill } from "../types";
 import SkillCard from "./SkillCard";
-import type { TechnicalSkill } from "./types";
 
 interface Props {
 	category: string;
