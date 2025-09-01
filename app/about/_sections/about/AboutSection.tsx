@@ -1,7 +1,7 @@
 import { CircleUser } from "lucide-react";
-import Profile from "./Profile";
-import SelfIntroduction from "./SelfIntroduction";
-import SocialLinks from "./SocialLinks";
+import Profile from "./components/Profile";
+import SelfIntroduction from "./components/SelfIntroduction";
+import SocialLinks from "./components/SocialLinks";
 
 const AboutSection = () => {
 	return (

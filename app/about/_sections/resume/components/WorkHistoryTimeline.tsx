@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { workHistory } from "./constants";
+import { workHistory } from "../constants";
 
 const WorkHistoryTimeline = () => {
 	return (

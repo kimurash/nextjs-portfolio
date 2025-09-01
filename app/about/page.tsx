@@ -1,6 +1,6 @@
-import AboutSection from "./_components/about/AboutSection";
-import CertificationSection from "./_components/certification/CertificationSection";
-import ResumeSection from "./_components/resume/ResumeSection";
+import AboutSection from "./_sections/about/AboutSection";
+import CertificationSection from "./_sections/certification/CertificationSection";
+import ResumeSection from "./_sections/resume/ResumeSection";
 
 const AboutPage = () => {
 	return (

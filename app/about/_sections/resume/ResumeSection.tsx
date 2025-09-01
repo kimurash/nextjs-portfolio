@@ -1,6 +1,6 @@
 import { FileText } from "lucide-react";
-import EducationHistoryTimeline from "./EducationHistoryTimeline";
-import WorkHistoryTimeline from "./WorkHistoryTimeline";
+import EducationHistoryTimeline from "./components/EducationHistoryTimeline";
+import WorkHistoryTimeline from "./components/WorkHistoryTimeline";
 
 const ResumeSection = () => {
 	return (

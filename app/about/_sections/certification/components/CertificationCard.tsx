@@ -1,6 +1,6 @@
+import type { Certification } from "../types";
 import { CertificationCardBody } from "./CertificationCardBody";
 import { CertificationCardHeader } from "./CertificationCardHeader";
-import type { Certification } from "./types";
 
 type Props = {
 	certification: Certification;
