@@ -26,13 +26,12 @@ const ProductCard = ({ product }: ProductCardProps) => {
 					{product.technologies.map((techKey) => {
 						const tech = technologies[techKey];
 						return (
-							<button
+							<span
 								key={techKey}
-								type="button"
 								className={`px-3 py-1 text-sm border rounded-full ${tech.textColor} ${tech.borderColor}`}
 							>
 								{tech.name}
-							</button>
+							</span>
 						);
 					})}
 				</div>
