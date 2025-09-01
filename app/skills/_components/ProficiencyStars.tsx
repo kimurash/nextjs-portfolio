@@ -1,4 +1,4 @@
-import { MAX_PROFICIENCY } from "./constants";
+import { MAX_PROFICIENCY } from "../constants";
 
 interface Props {
 	proficiency: number;
