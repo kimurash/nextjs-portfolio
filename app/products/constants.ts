@@ -1,4 +1,6 @@
-import type { Product, Technology } from "./types";
+import type { Product, ProductCategory, Technology } from "./types";
+
+export const productCategories: ProductCategory[] = ["all", "app", "bot"];
 
 export const technologies: Record<string, Technology> = {
 	typescript: {
@@ -113,6 +115,7 @@ export const products: Product[] = [
 		id: "dream-base",
 		title: "Dream Base",
 		image: "/image/noimage.png",
+		category: ["app"],
 		technologies: [
 			"typescript",
 			"react",
@@ -130,6 +133,7 @@ export const products: Product[] = [
 		id: "cis-lab-attendance-report",
 		title: "CIS Lab Attendance Report",
 		image: "/image/noimage.png",
+		category: ["bot"],
 		technologies: ["python", "aws"],
 		description: [
 			"毎月最終日に、その月に研究室へ出勤した回数をSlackに投稿するボットです。出勤した回数は、毎日自動で投稿されるメッセージに対するスタンプの数で集計しています。",
@@ -140,6 +144,7 @@ export const products: Product[] = [
 		id: "bootstrap-portfolio",
 		title: "ポートフォリオサイト1",
 		image: "/image/noimage.png",
+		category: [],
 		technologies: ["javascript", "bootstrap"],
 		description: [
 			"このポートフォリオサイトです。",
@@ -150,6 +155,7 @@ export const products: Product[] = [
 		id: "kitcc-library",
 		title: "KITCC Library",
 		image: "/image/noimage.png",
+		category: ["app"],
 		technologies: [
 			"remix",
 			"hono",
@@ -167,6 +173,7 @@ export const products: Product[] = [
 		id: "cis-lab-smart-lock",
 		title: "CIS Lab Smart Lock",
 		image: "/image/noimage.png",
+		category: ["app"],
 		technologies: ["python", "raspberryPi"],
 		description: [
 			"私が所属している情報知能システム研究室に導入したスマートロックです。",
@@ -177,6 +184,7 @@ export const products: Product[] = [
 		id: "atcoder-gacha-bot",
 		title: "AtCoder Gacha Bot",
 		image: "/image/noimage.png",
+		category: ["bot"],
 		technologies: ["docker", "python"],
 		description: [
 			"Slackのスラッシュコマンドに反応して、AtCoderの過去問からランダムに出題してくれるSlackボットです。コマンドの引数で問題の難易度を指定することができます。",
@@ -187,6 +195,7 @@ export const products: Product[] = [
 		id: "atcoder-review-bot",
 		title: "AtCoder Review Bot",
 		image: "/image/noimage.png",
+		category: ["bot"],
 		technologies: ["docker", "python", "fastapi"],
 		description: [
 			"特定のメッセージに反応して、Notionに登録されているAtCoderの過去問から、最も復習すべき問題を推薦してくれるLINEボットです。問題の解答結果に応じてスタンプで反応してくれます。",
@@ -197,6 +206,7 @@ export const products: Product[] = [
 		id: "myjuggler-estimator",
 		title: "マイジャグラーV 設定推定アプリ",
 		image: "/image/noimage.png",
+		category: ["app"],
 		technologies: ["typescript", "react", "vercel"],
 		description: [
 			"スロットを回した結果に基づいてマイジャグラーⅤの設定（当たりやすさ）を推定するアプリです。",
@@ -207,6 +217,7 @@ export const products: Product[] = [
 		id: "voice-actor-recognition",
 		title: "声優100人の話者認識",
 		image: "/image/noimage.png",
+		category: [],
 		technologies: ["python"],
 		description: [
 			"100人の声優を様々な機械学習モデルで話者認識した実験です。話者認識とは、入力された音声信号に対して「誰が話しているか」を推定する技術です。",
@@ -217,6 +228,7 @@ export const products: Product[] = [
 		id: "todoist-reminder",
 		title: "Todoist Reminder",
 		image: "/image/noimage.png",
+		category: ["bot"],
 		technologies: ["python"],
 		description: [
 			"毎日決まった時刻にTodooistからタスクを取得して、提出期限が迫っているタスクをDiscordに通知するボットです。",
@@ -227,6 +239,7 @@ export const products: Product[] = [
 		id: "pbl2-cpu-assembler",
 		title: "教育用CPU向けのアセンブラ",
 		image: "/image/noimage.png",
+		category: [],
 		technologies: ["rust"],
 		description: [
 			"本学の学部3回生に開講されているプロジェクト実習2のテーマ「CPU」で用いられる教育用CPU専用のアセンブラです。",
@@ -237,6 +250,7 @@ export const products: Product[] = [
 		id: "nand2tetris",
 		title: "Nand2Tetris",
 		image: "/image/noimage.png",
+		category: [],
 		technologies: ["java"],
 		description: [
 			"NANDゲートからOSを作り上げ、最終的にその上で動かすアプリケーションを開発するプロジェクトです。",
@@ -247,6 +261,7 @@ export const products: Product[] = [
 		id: "menu",
 		title: "menU",
 		image: "/image/noimage.png",
+		category: ["app"],
 		technologies: ["android", "java"],
 		description: [
 			"本学の学生食堂ORTUSの献立を組み立てるAndroidアプリです。",

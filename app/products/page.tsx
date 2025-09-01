@@ -1,8 +1,23 @@
+"use client";
+
+import { capitalize } from "@/lib/utils";
 import { AppWindow } from "lucide-react";
+import { useState } from "react";
 import ProductCard from "./_components/ProductCard";
-import { products } from "./constants";
+import { productCategories, products } from "./constants";
+import type { ProductCategory } from "./types";
 
 const ProductsPage = () => {
+	const [selectedCategory, setSelectedCategory] =
+		useState<ProductCategory>("all");
+
+	const filteredProducts =
+		selectedCategory === "all"
+			? products
+			: products.filter((product) => {
+					return product.category.includes(selectedCategory);
+				});
+
 	return (
 		<div className="min-h-screen bg-blue-50">
 			<div className="container mx-auto px-10 lg:px-24 py-8">
@@ -13,21 +28,26 @@ const ProductsPage = () => {
 					</h2>
 				</div>
 
-				<ul className="flex flex-wrap justify-center gap-4 mb-6">
-					<li className="cursor-pointer px-4 py-2 text-xl font-medium text-blue-600 border-b-2 border-blue-600">
-						All
-					</li>
-					<li className="cursor-pointer px-4 py-2 text-xl font-medium text-gray-600 hover:text-blue-600 transition-colors">
-						App
-					</li>
-					<li className="cursor-pointer px-4 py-2 text-xl font-medium text-gray-600 hover:text-blue-600 transition-colors">
-						Bot
-					</li>
-				</ul>
+				<div className="flex flex-wrap justify-center gap-4 mb-6">
+					{productCategories.map((category) => (
+						<button
+							key={category}
+							type="button"
+							onClick={() => setSelectedCategory(category)}
+							className={`px-4 py-2 text-xl font-medium transition-colors ${
+								selectedCategory === category
+									? "text-blue-600 border-b-2 border-blue-600"
+									: "text-gray-600 hover:text-blue-600"
+							}`}
+						>
+							{capitalize(category)}
+						</button>
+					))}
+				</div>
 
-				<div className="columns-1 md:columns-2 xl:columns-3 2xl:columns-4 gap-4 md:gap-6 space-y-4 md:space-y-6">
-					{products.map((product) => (
-						<div key={product.id} className="break-inside-avoid">
+				<div className="columns-1 md:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6">
+					{filteredProducts.map((product) => (
+						<div key={product.id} className="break-inside-avoid mb-6">
 							<ProductCard product={product} />
 						</div>
 					))}
