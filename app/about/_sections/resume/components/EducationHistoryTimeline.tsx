@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { educationHistory } from "./constants";
+import { educationHistory } from "../constants";
 
 const EducationHistoryTimeline = () => {
 	return (

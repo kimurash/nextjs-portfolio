@@ -8,7 +8,7 @@ import {
 	languages,
 	operatingSystems,
 	tools,
-} from "./_components/constants";
+} from "./constants";
 
 const SkillsPage = () => {
 	return (

@@ -1,5 +1,5 @@
 import { IdCard } from "lucide-react";
-import { CertificationCard } from "./CertificationCard";
+import { CertificationCard } from "./components/CertificationCard";
 import { certifications } from "./constants";
 
 export default function CertificationSection() {

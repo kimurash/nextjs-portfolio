@@ -1,5 +1,5 @@
 import Image from "next/image";
-import type { Certification } from "./types";
+import type { Certification } from "../types";
 
 type Props = {
 	certification: Certification;

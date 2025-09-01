@@ -1,4 +1,4 @@
-import { MAX_PROFICIENCY, proficiencyDescriptions } from "./constants";
+import { MAX_PROFICIENCY, proficiencyDescriptions } from "../constants";
 import ProficiencyStars from "./ProficiencyStars";
 
 const ProficiencyGuide = () => {
