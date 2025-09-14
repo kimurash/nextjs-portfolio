@@ -45,12 +45,14 @@ const ProductsPage = () => {
 					))}
 				</div>
 
-				<div className="columns-1 md:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6">
-					{filteredProducts.map((product) => (
-						<div key={product.id} className="break-inside-avoid mb-6">
-							<ProductCard product={product} />
-						</div>
-					))}
+				<div className="flex justify-center">
+					<div className="columns-1 md:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6">
+						{filteredProducts.map((product) => (
+							<div key={product.id} className="break-inside-avoid mb-6">
+								<ProductCard product={product} />
+							</div>
+						))}
+					</div>
 				</div>
 			</div>
 		</div>

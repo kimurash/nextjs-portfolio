@@ -110,6 +110,7 @@ export const technologies: Record<string, Technology> = {
 	},
 };
 
+// biome-ignore format: preference
 export const products: Product[] = [
 	{
 		id: "dream-base",
@@ -128,6 +129,18 @@ export const products: Product[] = [
 			"書き溜めた夢を公開して「いいね！」を送り合えるWebサービスです。PR TIMES HACKATHON 2025 Winterに参加して開発しました。",
 			"他のユーザーから「いいね！」をもらうことで、自分の夢に対する肯定感を上げ、夢を発信する心理的ハードルを下げることを目指したサービスです。",
 		],
+		links: [
+			{
+				name: "Website",
+				url: "https://dreamsink.vercel.app/",
+				backgroundColor: "bg-blue-500",
+			},
+			{
+				name: "GitHub",
+				url: "https://github.com/work-in-progress-team/dream-base",
+				backgroundColor: "bg-gray-500",
+			},
+		],
 	},
 	{
 		id: "cis-lab-attendance-report",
@@ -136,8 +149,16 @@ export const products: Product[] = [
 		category: ["bot"],
 		technologies: ["python", "aws"],
 		description: [
-			"毎月最終日に、その月に研究室へ出勤した回数をSlackに投稿するボットです。出勤した回数は、毎日自動で投稿されるメッセージに対するスタンプの数で集計しています。",
+			"毎月最終日に、その月に研究室へ出勤した回数をSlackに投稿するボットです。" +
+			"出勤した回数は、毎日自動で投稿されるメッセージに対するスタンプの数で集計しています。",
 			"出勤回数を集計してSlackへ投稿するLambda関数を定義し、Amazon EventBridgeで毎月最終日に定期実行しています。",
+		],
+		links: [
+			{
+				name: "GitHub",
+				url: "https://github.com/kimurash/slack-attendance-report",
+				backgroundColor: "bg-gray-500",
+			},
 		],
 	},
 	{
@@ -149,6 +170,18 @@ export const products: Product[] = [
 		description: [
 			"このポートフォリオサイトです。",
 			"CSSフレームワークのBootstrapについて勉強したことをアウトプットして自分のものにするために制作しました。",
+		],
+		links: [
+			{
+				name: "Website",
+				url: "https://kimurash.github.io/portfolio/",
+				backgroundColor: "bg-blue-500",
+			},
+			{
+				name: "GitHub",
+				url: "https://github.com/kimurash/portfolio",
+				backgroundColor: "bg-gray-500",
+			},
 		],
 	},
 	{
@@ -166,7 +199,20 @@ export const products: Product[] = [
 		],
 		description: [
 			"私が所属しているKITCC（Kyoto Institute of Technology Computer Club）が所有する書籍を管理するWebアプリです。",
-			"蔵書の利用促進と、時間・場所を問わず貸し出し履歴を管理できるようすることが開発の主な目的です。私はバックエンド全般とフロントエンドの一部とテストを担当しています。",
+			"蔵書の利用促進と、時間・場所を問わず貸し出し履歴を管理できるようすることが開発の主な目的です。" +
+			"私はバックエンド全般とフロントエンドの一部とテストを担当しています。",
+		],
+		links: [
+			{
+				name: "Website",
+				url: "https://kitcc-library-web.pages.dev/",
+				backgroundColor: "bg-blue-500",
+			},
+			{
+				name: "GitHub",
+				url: "https://github.com/kitcc-org/kitcc-library",
+				backgroundColor: "bg-gray-500",
+			},
 		],
 	},
 	{
@@ -179,6 +225,13 @@ export const products: Product[] = [
 			"私が所属している情報知能システム研究室に導入したスマートロックです。",
 			"学生証をPaSoRiというICカードリーダーにかざすと鍵が施錠 / 解錠されます。",
 		],
+		links: [
+			{
+				name: "GitHub",
+				url: "https://github.com/kimurash/kit-lab-smart-lock",
+				backgroundColor: "bg-gray-500",
+			},
+		],
 	},
 	{
 		id: "atcoder-gacha-bot",
@@ -187,8 +240,16 @@ export const products: Product[] = [
 		category: ["bot"],
 		technologies: ["docker", "python"],
 		description: [
-			"Slackのスラッシュコマンドに反応して、AtCoderの過去問からランダムに出題してくれるSlackボットです。コマンドの引数で問題の難易度を指定することができます。",
+			"Slackのスラッシュコマンドに反応して、AtCoderの過去問からランダムに出題してくれるSlackボットです。" +
+			"コマンドの引数で問題の難易度を指定することができます。",
 			"研究室のメンバーからのリクエストで、毎日決まった時刻に「今日の1問」を投稿する機能も実装しました。",
+		],
+		links: [
+			{
+				name: "GitHub",
+				url: "https://github.com/kimurash/atcoder-gacha-bot",
+				backgroundColor: "bg-gray-500",
+			},
 		],
 	},
 	{
@@ -198,8 +259,16 @@ export const products: Product[] = [
 		category: ["bot"],
 		technologies: ["docker", "python", "fastapi"],
 		description: [
-			"特定のメッセージに反応して、Notionに登録されているAtCoderの過去問から、最も復習すべき問題を推薦してくれるLINEボットです。問題の解答結果に応じてスタンプで反応してくれます。",
+			"特定のメッセージに反応して、Notionに登録されているAtCoderの過去問から、最も復習すべき問題を推薦してくれるLINEボットです。" +
+			"問題の解答結果に応じてスタンプで反応してくれます。",
 			"自分がスキマ時間で精進するために開発しました。",
+		],
+		links: [
+			{
+				name: "GitHub",
+				url: "https://github.com/kimurash/atcoder-review-bot",
+				backgroundColor: "bg-gray-500",
+			},
 		],
 	},
 	{
@@ -210,7 +279,20 @@ export const products: Product[] = [
 		technologies: ["typescript", "react", "vercel"],
 		description: [
 			"スロットを回した結果に基づいてマイジャグラーⅤの設定（当たりやすさ）を推定するアプリです。",
-			"ギャンブルが好きな友人が、より戦略に集中できるようにするために開発しました。友人からのリクエストで、投資金額と収入を入力すると利益を計算できる機能も実装しました。",
+			"ギャンブルが好きな友人が、より戦略に集中できるようにするために開発しました。" +
+			"友人からのリクエストで、投資金額と収入を入力すると利益を計算できる機能も実装しました。",
+		],
+		links: [
+			{
+				name: "Website",
+				url: "https://my-juggler-estimator.vercel.app",
+				backgroundColor: "bg-blue-500",
+			},
+			{
+				name: "GitHub",
+				url: "https://github.com/kimurash/my-juggler-estimator",
+				backgroundColor: "bg-gray-500",
+			},
 		],
 	},
 	{
@@ -221,7 +303,15 @@ export const products: Product[] = [
 		technologies: ["python"],
 		description: [
 			"100人の声優を様々な機械学習モデルで話者認識した実験です。話者認識とは、入力された音声信号に対して「誰が話しているか」を推定する技術です。",
-			"長年アニメを見ていると、よく出演されている声優さんを識別できるようになってきます。これは、脳が声優さんの声の特徴を学習しているためであり、同じことを機械学習でも実現できるのでは？と考えたのが実験の動機です。",
+			"長年アニメを見ていると、よく出演されている声優さんを識別できるようになってきます。" +
+			"これは、脳が声優さんの声の特徴を学習しているためであり、同じことを機械学習でも実現できるのでは？と考えたのが実験の動機です。",
+		],
+		links: [
+			{
+				name: "GitHub",
+				url: "https://github.com/kimurash/voice-actor-recognition",
+				backgroundColor: "bg-gray-500",
+			},
 		],
 	},
 	{
@@ -234,6 +324,18 @@ export const products: Product[] = [
 			"毎日決まった時刻にTodooistからタスクを取得して、提出期限が迫っているタスクをDiscordに通知するボットです。",
 			"自分が課題の提出期限までに「提出確定ボタン」を確実に押すために開発しました。",
 		],
+		links: [
+			{
+				name: "GitHub",
+				url: "https://github.com/kimurash/todoist-remind-bot",
+				backgroundColor: "bg-gray-500",
+			},
+			{
+				name: "Article",
+				url: "https://esa-pages.io/p/sharing/19485/posts/15/e201cf1359bd9cbc3561.html",
+				backgroundColor: "bg-green-600",
+			},
+		],
 	},
 	{
 		id: "pbl2-cpu-assembler",
@@ -243,7 +345,16 @@ export const products: Product[] = [
 		technologies: ["rust"],
 		description: [
 			"本学の学部3回生に開講されているプロジェクト実習2のテーマ「CPU」で用いられる教育用CPU専用のアセンブラです。",
-			"本テーマではCPUのシミュレータをC言語で実装します。実装したシミュレータの正当性を証明するために、機械語のテストプログラムを用意する必要があり、アセンブリ言語から機械語へハンドアセンブルするのが面倒だったので、アセンブラを開発しました。",
+			"本テーマではCPUのシミュレータをC言語で実装します。" +
+			"実装したシミュレータの正当性を証明するために、機械語のテストプログラムを用意する必要があり、" +
+			"アセンブリ言語から機械語へハンドアセンブルするのが面倒だったので、アセンブラを開発しました。",
+		],
+		links: [
+			{
+				name: "GitHub",
+				url: "https://github.com/kimurash/PJ2-CPU-assembler",
+				backgroundColor: "bg-gray-500",
+			},
 		],
 	},
 	{
@@ -254,7 +365,15 @@ export const products: Product[] = [
 		technologies: ["java"],
 		description: [
 			"NANDゲートからOSを作り上げ、最終的にその上で動かすアプリケーションを開発するプロジェクトです。",
-			"「コンピュータの仕組みを解き明かしたい」という入学当時からの知的好奇心を満たすために取り組みました。全てのプロジェクトを完遂し、自作OSの上でPONGゲームを動かすことができました。",
+			"「コンピュータの仕組みを解き明かしたい」という入学当時からの知的好奇心を満たすために取り組みました。" +
+			"全てのプロジェクトを完遂し、自作OSの上でPONGゲームを動かすことができました。",
+		],
+		links: [
+			{
+				name: "GitHub",
+				url: "https://github.com/kimurash/nand2tetris",
+				backgroundColor: "bg-gray-500",
+			},
 		],
 	},
 	{
@@ -267,6 +386,13 @@ export const products: Product[] = [
 			"本学の学生食堂ORTUSの献立を組み立てるAndroidアプリです。",
 			"2回生になってプログラミング能力がある程度身に付いてきた実感があったため、何か実用的なものを作ってみたいという思いでAndroidアプリ開発に挑戦しました。",
 			"メニューの情報が足りず実用には至りませんでしたが、動くものを創ってインストールまでできたという成功体験は、私がものづくりに楽しさに目覚める重要なきっかけとなりました。",
+		],
+		links: [
+			{
+				name: "GitHub",
+				url: "https://github.com/kimurash/menU",
+				backgroundColor: "bg-gray-500",
+			},
 		],
 	},
 ];

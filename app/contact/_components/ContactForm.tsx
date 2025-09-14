@@ -77,7 +77,7 @@ const ContactForm = () => {
 										<FormControl>
 											<Input
 												{...field}
-												className="w-full border-2 border-gray-400 focus-visible:ring-2 focus-visible:ring-sky-500/50"
+												className="w-full border-1 border-gray-400"
 											/>
 										</FormControl>
 										<FormMessage />
@@ -97,7 +97,7 @@ const ContactForm = () => {
 										<FormControl>
 											<Input
 												{...field}
-												className="w-full border-2 border-gray-400 focus-visible:ring-2 focus-visible:ring-sky-500/50"
+												className="w-full border-1 border-gray-400"
 											/>
 										</FormControl>
 										<FormMessage />
@@ -118,7 +118,7 @@ const ContactForm = () => {
 								<FormControl>
 									<Input
 										{...field}
-										className="w-full border-2 border-gray-400 focus-visible:ring-2 focus-visible:ring-sky-500/50"
+										className="w-full border-1 border-gray-400"
 									/>
 								</FormControl>
 								<FormMessage />
@@ -138,7 +138,7 @@ const ContactForm = () => {
 									<Textarea
 										{...field}
 										rows={12}
-										className="w-full border-2 border-gray-400 focus-visible:ring-2 focus-visible:ring-sky-500/50 resize-vertical min-h-[200px]"
+										className="w-full border-1 border-gray-400 resize-vertical min-h-[200px]"
 									/>
 								</FormControl>
 								<FormMessage />
