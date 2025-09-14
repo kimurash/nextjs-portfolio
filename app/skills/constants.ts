@@ -216,8 +216,14 @@ export const infrastructures: TechnicalSkill[] = [
 	{
 		name: "Kubernetes",
 		icon: "https://skillicons.dev/icons?i=kubernetes&theme=light",
-		proficiency: 2,
+		proficiency: 3,
 		tags: ["趣味"],
+	},
+	{
+		name: "Terraform",
+		icon: "https://skillicons.dev/icons?i=terraform&theme=light",
+		proficiency: 4,
+		tags: ["インターン"],
 	},
 ];
 
@@ -264,7 +270,12 @@ export const tools: TechnicalSkill[] = [
 		proficiency: 4,
 		tags: ["インターン", "趣味", "ハッカソン"],
 	},
-
+	{
+		name: "Grafana",
+		icon: "https://skillicons.dev/icons?i=grafana&theme=light",
+		proficiency: 4,
+		tags: ["インターン"],
+	},
 	{
 		name: "Prisma",
 		icon: "https://skillicons.dev/icons?i=prisma&theme=light",
