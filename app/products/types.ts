@@ -1,19 +1,25 @@
 export type ProductCategory = "all" | "app" | "bot";
 
+export interface Technology {
+	name: string;
+	textColor: string;
+	borderColor: string;
+}
+
 export interface Product {
 	id: string;
 	title: string;
-	image: string;
+	images: ProductImage[];
 	category: ProductCategory[];
 	technologies: string[];
 	description: string[];
 	links: ProductLink[];
 }
 
-export interface Technology {
-	name: string;
-	textColor: string;
-	borderColor: string;
+export interface ProductImage {
+	src: string;
+	width: number;
+	height: number;
 }
 
 export interface ProductLink {

@@ -11,7 +11,7 @@ const ProductModalFooter = ({ links }: Props) => {
 	}
 
 	return (
-		<div className="flex justify-center gap-3 px-6 py-3 border-t border-gray-200">
+		<div className="flex justify-center gap-3 px-6 py-4 border-t border-gray-200">
 			{links.map((link) => (
 				<Link
 					href={link.url}
@@ -21,7 +21,7 @@ const ProductModalFooter = ({ links }: Props) => {
 				>
 					<button
 						type="button"
-						className={`px-5 py-2 text-base text-white rounded-md ${link.backgroundColor} hover:opacity-80`}
+						className={`px-5 py-2 text-base font-medium text-white rounded-md ${link.backgroundColor} hover:opacity-80`}
 					>
 						{link.name}
 					</button>

@@ -36,7 +36,7 @@ const ProductCard = ({ product }: Props) => {
 			>
 				<div className="relative overflow-hidden border-b-2 border-gray-200">
 					<Image
-						src={product.image}
+						src={product.images[0]}
 						alt={product.title}
 						width={760}
 						height={460}
