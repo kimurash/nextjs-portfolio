@@ -170,7 +170,7 @@ export const products: Product[] = [
 		// biome-ignore format: preference
 		description: [
 			"毎月最終日に、その月に研究室へ出勤した回数をSlackに投稿するボットです。" +
-			"出勤した回数は、毎日自動で投s稿されるメッセージに対するスタンプの数で集計しています。",
+			"出勤した回数は、毎日自動で投稿されるメッセージに対するスタンプの数で集計しています。",
 			"出勤回数を集計してSlackへ投稿するLambda関数を定義し、Amazon EventBridgeで毎月最終日に定期実行しています。",
 		],
 		links: [
