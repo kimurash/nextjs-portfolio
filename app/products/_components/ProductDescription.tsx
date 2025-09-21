@@ -1,17 +1,20 @@
 interface Props {
 	productId: string;
-	descriptions: string[];
+	paragraphs: string[];
 }
 
-const ProductDescription = ({ productId, descriptions }: Props) => {
+const ProductDescription = ({ productId, paragraphs }: Props) => {
 	return (
 		<div className="space-y-3">
-			{descriptions.map((description) => (
+			{paragraphs.map((paragraph, index) => (
 				<p
-					key={`${productId}-description-${description}`}
-					className="text-gray-800 leading-relaxed"
+					key={
+						// biome-ignore lint/suspicious/noArrayIndexKey: negligence
+						`${productId}-description-${index}`
+					}
+					className="text-gray-800"
 				>
-					{description}
+					{paragraph}
 				</p>
 			))}
 		</div>
