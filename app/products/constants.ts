@@ -115,7 +115,7 @@ export const products: Product[] = [
 	{
 		id: "dream-base",
 		title: "Dream Base",
-		image: "/image/noimage.png",
+		images: ["/image/noimage.png"],
 		category: ["app"],
 		technologies: [
 			"typescript",
@@ -126,8 +126,10 @@ export const products: Product[] = [
 			"vercel",
 		],
 		description: [
-			"書き溜めた夢を公開して「いいね！」を送り合えるWebサービスです。PR TIMES HACKATHON 2025 Winterに参加して開発しました。",
-			"他のユーザーから「いいね！」をもらうことで、自分の夢に対する肯定感を上げ、夢を発信する心理的ハードルを下げることを目指したサービスです。",
+			"書き溜めた夢を公開して「いいね！」を送り合えるWebサービスです。" +
+			"PR TIMES HACKATHON 2025 Winterに参加して開発しました。",
+			"他のユーザーから「いいね！」をもらうことで、自分の夢に対する肯定感を上げ、" +
+			"夢を発信する心理的ハードルを下げることを目指したサービスです。",
 		],
 		links: [
 			{
@@ -145,7 +147,7 @@ export const products: Product[] = [
 	{
 		id: "cis-lab-attendance-report",
 		title: "CIS Lab Attendance Report",
-		image: "/image/noimage.png",
+		images: ["/image/noimage.png"],
 		category: ["bot"],
 		technologies: ["python", "aws"],
 		description: [
@@ -164,7 +166,7 @@ export const products: Product[] = [
 	{
 		id: "bootstrap-portfolio",
 		title: "ポートフォリオサイト1",
-		image: "/image/noimage.png",
+		images: ["/image/noimage.png"],
 		category: [],
 		technologies: ["javascript", "bootstrap"],
 		description: [
@@ -187,7 +189,7 @@ export const products: Product[] = [
 	{
 		id: "kitcc-library",
 		title: "KITCC Library",
-		image: "/image/noimage.png",
+		images: ["/image/noimage.png"],
 		category: ["app"],
 		technologies: [
 			"remix",
@@ -218,7 +220,7 @@ export const products: Product[] = [
 	{
 		id: "cis-lab-smart-lock",
 		title: "CIS Lab Smart Lock",
-		image: "/image/noimage.png",
+		images: ["/image/noimage.png"],
 		category: ["app"],
 		technologies: ["python", "raspberryPi"],
 		description: [
@@ -236,7 +238,7 @@ export const products: Product[] = [
 	{
 		id: "atcoder-gacha-bot",
 		title: "AtCoder Gacha Bot",
-		image: "/image/noimage.png",
+		images: ["/image/noimage.png"],
 		category: ["bot"],
 		technologies: ["docker", "python"],
 		description: [
@@ -255,7 +257,7 @@ export const products: Product[] = [
 	{
 		id: "atcoder-review-bot",
 		title: "AtCoder Review Bot",
-		image: "/image/noimage.png",
+		images: ["/image/noimage.png"],
 		category: ["bot"],
 		technologies: ["docker", "python", "fastapi"],
 		description: [
@@ -274,7 +276,7 @@ export const products: Product[] = [
 	{
 		id: "myjuggler-estimator",
 		title: "マイジャグラーV 設定推定アプリ",
-		image: "/image/noimage.png",
+		images: ["/image/noimage.png"],
 		category: ["app"],
 		technologies: ["typescript", "react", "vercel"],
 		description: [
@@ -298,11 +300,12 @@ export const products: Product[] = [
 	{
 		id: "voice-actor-recognition",
 		title: "声優100人の話者認識",
-		image: "/image/noimage.png",
+		images: ["/image/noimage.png"],
 		category: [],
 		technologies: ["python"],
 		description: [
-			"100人の声優を様々な機械学習モデルで話者認識した実験です。話者認識とは、入力された音声信号に対して「誰が話しているか」を推定する技術です。",
+			"100人の声優を様々な機械学習モデルで話者認識した実験です。" +
+			"話者認識とは、入力された音声信号に対して「誰が話しているか」を推定する技術です。",
 			"長年アニメを見ていると、よく出演されている声優さんを識別できるようになってきます。" +
 			"これは、脳が声優さんの声の特徴を学習しているためであり、同じことを機械学習でも実現できるのでは？と考えたのが実験の動機です。",
 		],
@@ -317,7 +320,7 @@ export const products: Product[] = [
 	{
 		id: "todoist-reminder",
 		title: "Todoist Reminder",
-		image: "/image/noimage.png",
+		images: ["/image/noimage.png"],
 		category: ["bot"],
 		technologies: ["python"],
 		description: [
@@ -340,7 +343,7 @@ export const products: Product[] = [
 	{
 		id: "pbl2-cpu-assembler",
 		title: "教育用CPU向けのアセンブラ",
-		image: "/image/noimage.png",
+		images: ["/image/noimage.png"],
 		category: [],
 		technologies: ["rust"],
 		description: [
@@ -360,7 +363,7 @@ export const products: Product[] = [
 	{
 		id: "nand2tetris",
 		title: "Nand2Tetris",
-		image: "/image/noimage.png",
+		images: ["/image/noimage.png"],
 		category: [],
 		technologies: ["java"],
 		description: [
@@ -379,13 +382,15 @@ export const products: Product[] = [
 	{
 		id: "menu",
 		title: "menU",
-		image: "/image/noimage.png",
+		images: ["/image/noimage.png"],
 		category: ["app"],
 		technologies: ["android", "java"],
 		description: [
 			"本学の学生食堂ORTUSの献立を組み立てるAndroidアプリです。",
-			"2回生になってプログラミング能力がある程度身に付いてきた実感があったため、何か実用的なものを作ってみたいという思いでAndroidアプリ開発に挑戦しました。",
-			"メニューの情報が足りず実用には至りませんでしたが、動くものを創ってインストールまでできたという成功体験は、私がものづくりに楽しさに目覚める重要なきっかけとなりました。",
+			"2回生になってプログラミング能力がある程度身に付いてきた実感があったため、" +
+			"何か実用的なものを作ってみたいという思いでAndroidアプリ開発に挑戦しました。",
+			"メニューの情報が足りず実用には至りませんでしたが、" +
+			"動くものを創ってインストールまでできたという成功体験は、私がものづくりに楽しさに目覚める重要なきっかけとなりました。",
 		],
 		links: [
 			{

@@ -11,7 +11,7 @@ const ProductModalBody = ({ product }: Props) => {
 			<div className="flex flex-col lg:flex-row gap-6">
 				<div className="flex-shrink-0 mx-auto lg:mx-0">
 					<Image
-						src={product.image}
+						src={product.images[0]}
 						alt={product.title}
 						width={760}
 						height={460}

@@ -3,7 +3,7 @@ export type ProductCategory = "all" | "app" | "bot";
 export interface Product {
 	id: string;
 	title: string;
-	image: string;
+	images: string[];
 	category: ProductCategory[];
 	technologies: string[];
 	description: string[];
