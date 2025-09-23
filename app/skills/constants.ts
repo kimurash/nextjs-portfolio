@@ -126,7 +126,7 @@ export const frameworks: TechnicalSkill[] = [
 	{
 		name: "Next.js",
 		icon: "https://skillicons.dev/icons?i=nextjs&theme=light",
-		proficiency: 3,
+		proficiency: 4,
 		tags: ["趣味"],
 	},
 	{
