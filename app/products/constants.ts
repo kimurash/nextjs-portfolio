@@ -122,6 +122,32 @@ export const technologies: Record<string, Technology> = {
 
 export const products: Product[] = [
 	{
+		id: "kaitabi20s-polling-bot",
+		title: "界タビ20s空き通知ボット",
+		images: [
+			{
+				src: "/image/products/kaitabi20s-polling-bot/notification.png",
+				width: 267,
+				height: 104,
+			},
+		],
+		category: ["bot"],
+		technologies: ["python"],
+		// biome-ignore format: preference
+		description: [
+			"界タビ20sの予約サイトを定期的にチェックし、空きがあった場合はLINEやSlackなどのメッセージングアプリに予約可能な日程を通知するボットです。" +
+			"予約が取れなくて困っている友達のために開発しました。",
+			"このボットのおかげで友達は見事予約を勝ち取ることができました。",
+		],
+		links: [
+			{
+				name: "GitHub",
+				url: "https://github.com/kimurash/hoshino-resorts-kaitabi20s-polling-bot",
+				backgroundColor: "bg-gray-500",
+			},
+		],
+	},
+	{
 		id: "repointerviewer",
 		title: "RepoInterviewer",
 		images: [
