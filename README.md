@@ -69,7 +69,7 @@ pnpm dev
 | `pnpm start` | ビルド済みアプリケーションを起動する |
 | `pnpm lint` | Next.js のルールに基づいて静的解析する |
 | `pnpm format` | Biome を使ってフォーマットする |
-| `pnpm check` | Biome を使って構文・型・規約のチェックして自動で修正する |
+| `pnpm check` | Biome を使って構文・型・規約をチェックする |
 
 [nextjs]: https://nextjs.org/
 [tailwindcss]: https://tailwindcss.com/
