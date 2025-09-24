@@ -122,11 +122,11 @@ export const technologies: Record<string, Technology> = {
 
 export const products: Product[] = [
 	{
-		id: "kaitabi20s-polling",
+		id: "kaitabi20s-polling-bot",
 		title: "界タビ20s空き通知ボット",
 		images: [
 			{
-				src: "/image/products/kaitabi20s-polling/notification.png",
+				src: "/image/products/kaitabi20s-polling-bot/notification.png",
 				width: 267,
 				height: 104,
 			},
@@ -142,7 +142,7 @@ export const products: Product[] = [
 		links: [
 			{
 				name: "GitHub",
-				url: "https://github.com/kimurash/hoshino-resorts-kaitabi20s-polling",
+				url: "https://github.com/kimurash/hoshino-resorts-kaitabi20s-polling-bot",
 				backgroundColor: "bg-gray-500",
 			},
 		],
