@@ -217,7 +217,7 @@ export const infrastructures: TechnicalSkill[] = [
 		name: "Kubernetes",
 		icon: "https://skillicons.dev/icons?i=kubernetes&theme=light",
 		proficiency: 3,
-		tags: ["趣味"],
+		tags: ["趣味", "インターン"],
 	},
 	{
 		name: "Terraform",
