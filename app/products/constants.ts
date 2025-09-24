@@ -112,6 +112,56 @@ export const technologies: Record<string, Technology> = {
 
 export const products: Product[] = [
 	{
+		id: "petrock",
+		title: "Petrock",
+		images: [
+			{
+				src: "/image/products/petrock/home.png",
+				width: 247,
+				height: 507,
+			},
+			{
+				src: "/image/products/petrock/todo.png",
+				width: 245,
+				height: 467,
+			},
+			{
+				src: "/image/products/petrock/chat.png",
+				width: 232,
+				height: 483,
+			},
+		],
+		category: ["app"],
+		technologies: ["aws", "typescript", "react", "fastapi"],
+		// biome-ignore format: preference
+		description: [
+			"AIエージェントによる日々のTODO管理やチャットで相談できる機能によって、" +
+			"子供が主体的にペットを飼育できるようサポートするPWA（Progressive Web Application）です。" +
+			"AWS Summit Japan 2025 生成AIエージェントハッカソンに参加して開発しました。",
+			"私は、チームがプロダクト開発に集中できるよう、技術面からチームを支えました。" +
+			"具体的には、技術選定を主導し、メンバーからの相談に応える傍ら、" +
+			"後回しにされがちな開発環境の整備やCI/CDの構築に率先して取り組みました。" +
+			"開発効率と品質に直結する重要な基盤を整えることで、チームの生産性向上に貢献しました。",
+		],
+		links: [
+			{
+				name: "Youtube",
+				url: "https://www.youtube.com/watch?v=gSazE0B8zm4",
+				backgroundColor: "bg-red-500",
+			},
+			{
+				name: "Article",
+				url: "https://aws.amazon.com/jp/blogs/news/aiagent_hackathon_report/",
+				backgroundColor: "bg-green-600",
+			},
+			{
+				name: "GitHub",
+				url: "https://github.com/ItwoonTech/petrock-nova",
+				backgroundColor: "bg-gray-500",
+			},
+		],
+	},
+	{
 		id: "dream-base",
 		title: "Dream Base",
 		images: [

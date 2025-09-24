@@ -52,7 +52,7 @@ const ProductCarousel = ({ productId, images }: Props) => {
 								alt={image.src}
 								width={image.width}
 								height={image.height}
-								className="h-auto w-full rounded-lg object-cover border"
+								className="h-auto w-full max-h-[40vh] rounded-lg object-cover border"
 							/>
 						</div>
 					))}
