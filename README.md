@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ポートフォリオサイト
 
-## Getting Started
+## 環境構築
 
-First, run the development server:
+### 環境変数
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
+| 変数名 | 説明 |
+| --- | --- |
+| CONTACT_FORM_RECIPIENT_EMAIL | 問い合わせを受け取るメールアドレス |
+| RESEND_API_KEY | Resend の API キー |
+| RECAPTCHA_SECRET_KEY | reCAPTCHA のシークレットキー |
+| NEXT_PUBLIC_RECAPTCHA_SITE_KEY | reCAPTCHA のサイトキー |
+
+### ローカル起動
+
+```
+pnpm i
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 技術スタック
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| 項目 | 使用技術 |
+| --- | --- |
+| 言語 | TypeScript |
+| フレームワーク | [Next.js][nextjs], [Tailwind CSS][tailwindcss] |
+| リンター / フォーマッター | [Biome][biome] |
+| メール送信サービス | [Resend][resend] |
+| ホスティングサービス | [Vercel][vercel] |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ディレクトリ構成
 
-## Learn More
+```
+.
+├── app
+│   ├── about/
+│   ├── contact/
+│   ├── products/
+│   ├── skills/
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── opengraph-image.png
+│   └── page.tsx
+├── biome.json
+├── components
+│   ├── layout/
+│   └── ui/
+├── components.json
+├── lib
+│   ├── schemas.ts
+│   └── utils.ts
+├── next-env.d.ts
+├── next.config.ts
+├── package.json
+├── pnpm-lock.yaml
+├── postcss.config.mjs
+├── public/
+├── README.md
+└── tsconfig.json
+```
 
-To learn more about Next.js, take a look at the following resources:
+## npm scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| コマンド | 説明 |
+| --- | --- |
+| `pnpm dev` | 開発サーバを起動する（Turbopack） |
+| `pnpm build` | 本番用にアプリケーションをビルドする |
+| `pnpm start` | ビルド済みアプリケーションを起動する |
+| `pnpm lint` | Next.js のルールに基づいて静的解析する |
+| `pnpm format` | Biome を使ってフォーマットする |
+| `pnpm check` | Biome を使って構文・型・規約のチェックして自動で修正する |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[nextjs]: https://nextjs.org/
+[tailwindcss]: https://tailwindcss.com/
+[biome]: https://biomejs.dev/
+[resend]: https://resend.com/
+[vercel]: https://vercel.com/
