@@ -19,12 +19,10 @@ export default function RootLayout({
 		<html lang="ja">
 			<body className="antialiased min-h-screen flex flex-col">
 				<Header />
-				<main className="flex-1">
-					{children}
-					<Analytics />
-				</main>
+				<main className="flex-1">{children}</main>
 				<Footer />
 				<Toaster />
+				<Analytics />
 			</body>
 		</html>
 	);
