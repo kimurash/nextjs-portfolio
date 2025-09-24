@@ -1,6 +1,7 @@
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import { Toaster } from "@/components/ui/sonner";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -18,7 +19,10 @@ export default function RootLayout({
 		<html lang="ja">
 			<body className="antialiased min-h-screen flex flex-col">
 				<Header />
-				<main className="flex-1">{children}</main>
+				<main className="flex-1">
+					{children}
+					<Analytics />
+				</main>
 				<Footer />
 				<Toaster />
 			</body>
