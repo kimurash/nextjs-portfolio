@@ -20,7 +20,7 @@ const ProductsPage = () => {
 
 	return (
 		<div className="min-h-screen bg-blue-50">
-			<div className="container mx-auto px-10 lg:px-24 py-8">
+			<div className="container mx-auto px-10 lg:px-15 py-8">
 				<div className="text-center mb-6">
 					<h2 className="text-4xl font-bold text-gray-800">
 						<AppWindow className="inline mr-2 mb-1" size={35} />

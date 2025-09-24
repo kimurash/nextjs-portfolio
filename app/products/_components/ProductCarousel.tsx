@@ -27,6 +27,7 @@ const ProductCarousel = ({ productId, images }: Props) => {
 	} = usePrevNextButtons(emblaApi);
 
 	return (
+		// FIXME: justify-center を書いても上下中央寄せにならない
 		<div className="flex flex-col">
 			<div className="overflow-hidden" ref={emblaRef}>
 				<div
