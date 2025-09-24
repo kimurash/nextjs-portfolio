@@ -3,38 +3,58 @@ import type { Product, ProductCategory, Technology } from "./types";
 export const productCategories: ProductCategory[] = ["all", "app", "bot"];
 
 export const technologies: Record<string, Technology> = {
-	typescript: {
-		name: "TypeScript",
-		textColor: "text-blue-500",
-		borderColor: "border-blue-500",
-	},
-	react: {
-		name: "React",
-		textColor: "text-sky-600",
-		borderColor: "border-sky-600",
-	},
-	flask: {
-		name: "Flask",
-		textColor: "text-cyan-500",
-		borderColor: "border-cyan-500",
-	},
-	supabase: {
-		name: "Supabase",
+	android: {
+		name: "Android",
 		textColor: "text-green-600",
 		borderColor: "border-green-600",
-	},
-	python: {
-		name: "Python",
-		textColor: "text-blue-600",
-		borderColor: "border-blue-600",
 	},
 	aws: {
 		name: "AWS",
 		textColor: "text-orange-600",
 		borderColor: "border-orange-600",
 	},
-	remix: {
-		name: "Remix",
+	bootstrap: {
+		name: "Bootstrap",
+		textColor: "text-purple-600",
+		borderColor: "border-purple-600",
+	},
+	cloudflare: {
+		name: "Cloudflare",
+		textColor: "text-orange-600",
+		borderColor: "border-orange-600",
+	},
+	docker: {
+		name: "Docker",
+		textColor: "text-blue-600",
+		borderColor: "border-blue-600",
+	},
+	drizzle: {
+		name: "Drizzle ORM",
+		textColor: "text-lime-600",
+		borderColor: "border-lime-600",
+	},
+	fastapi: {
+		name: "FastAPI",
+		textColor: "text-emerald-600",
+		borderColor: "border-emerald-600",
+	},
+	firebase: {
+		name: "Firebase",
+		textColor: "text-orange-600",
+		borderColor: "border-orange-600",
+	},
+	flask: {
+		name: "Flask",
+		textColor: "text-cyan-500",
+		borderColor: "border-cyan-500",
+	},
+	gcp: {
+		name: "GCP",
+		textColor: "text-cyan-600",
+		borderColor: "border-cyan-600",
+	},
+	githubactions: {
+		name: "GitHub Actions",
 		textColor: "text-gray-600",
 		borderColor: "border-gray-600",
 	},
@@ -43,33 +63,8 @@ export const technologies: Record<string, Technology> = {
 		textColor: "text-red-600",
 		borderColor: "border-red-600",
 	},
-	drizzle: {
-		name: "Drizzle ORM",
-		textColor: "text-lime-600",
-		borderColor: "border-lime-600",
-	},
-	docker: {
-		name: "Docker",
-		textColor: "text-blue-600",
-		borderColor: "border-blue-600",
-	},
-	vercel: {
-		name: "Vercel",
-		textColor: "text-gray-600",
-		borderColor: "border-gray-600",
-	},
-	android: {
-		name: "Android",
-		textColor: "text-green-600",
-		borderColor: "border-green-600",
-	},
 	java: {
 		name: "Java",
-		textColor: "text-gray-600",
-		borderColor: "border-gray-600",
-	},
-	githubActions: {
-		name: "GitHub Actions",
 		textColor: "text-gray-600",
 		borderColor: "border-gray-600",
 	},
@@ -78,39 +73,191 @@ export const technologies: Record<string, Technology> = {
 		textColor: "text-yellow-600",
 		borderColor: "border-yellow-600",
 	},
-	bootstrap: {
-		name: "Bootstrap",
-		textColor: "text-purple-600",
-		borderColor: "border-purple-600",
+	python: {
+		name: "Python",
+		textColor: "text-blue-600",
+		borderColor: "border-blue-600",
 	},
 	raspberrypi: {
 		name: "Raspberry Pi",
 		textColor: "text-red-600",
 		borderColor: "border-red-600",
 	},
-	fastapi: {
-		name: "FastAPI",
-		textColor: "text-emerald-600",
-		borderColor: "border-emerald-600",
+	react: {
+		name: "React",
+		textColor: "text-sky-600",
+		borderColor: "border-sky-600",
+	},
+	remix: {
+		name: "Remix",
+		textColor: "text-gray-600",
+		borderColor: "border-gray-600",
 	},
 	rust: {
 		name: "Rust",
 		textColor: "text-orange-600",
 		borderColor: "border-orange-600",
 	},
+	supabase: {
+		name: "Supabase",
+		textColor: "text-green-600",
+		borderColor: "border-green-600",
+	},
+	typescript: {
+		name: "TypeScript",
+		textColor: "text-blue-500",
+		borderColor: "border-blue-500",
+	},
+	vercel: {
+		name: "Vercel",
+		textColor: "text-gray-600",
+		borderColor: "border-gray-600",
+	},
 	vitest: {
 		name: "Vitest",
 		textColor: "text-green-600",
 		borderColor: "border-green-600",
 	},
-	cloudflare: {
-		name: "Cloudflare",
-		textColor: "text-orange-600",
-		borderColor: "border-orange-600",
-	},
 };
 
 export const products: Product[] = [
+	{
+		id: "kaitabi20s-polling-bot",
+		title: "界タビ20s空き通知ボット",
+		images: [
+			{
+				src: "/image/products/kaitabi20s-polling-bot/notification.png",
+				width: 267,
+				height: 104,
+			},
+		],
+		category: ["bot"],
+		technologies: ["python"],
+		// biome-ignore format: preference
+		description: [
+			"界タビ20sの予約サイトを定期的にチェックし、空きがあった場合はLINEやSlackなどのメッセージングアプリに予約可能な日程を通知するボットです。" +
+			"予約が取れなくて困っている友達のために開発しました。",
+			"このボットのおかげで友達は見事予約を勝ち取ることができました。",
+		],
+		links: [
+			{
+				name: "GitHub",
+				url: "https://github.com/kimurash/hoshino-resorts-kaitabi20s-polling-bot",
+				backgroundColor: "bg-gray-500",
+			},
+		],
+	},
+	{
+		id: "repointerviewer",
+		title: "RepoInterviewer",
+		images: [
+			{
+				src: "/image/products/repointerviewer/home.png",
+				width: 1920,
+				height: 1080,
+			},
+			{
+				src: "/image/products/repointerviewer/character.png",
+				width: 1920,
+				height: 1080,
+			},
+			{
+				src: "/image/products/repointerviewer/interview.png",
+				width: 1920,
+				height: 1080,
+			},
+			{
+				src: "/image/products/repointerviewer/result.png",
+				width: 1920,
+				height: 1080,
+			},
+		],
+		category: ["app"],
+		technologies: [
+			"typescript",
+			"react",
+			"fastapi",
+			"firebase",
+			"githubactions",
+			"gcp",
+		],
+		// biome-ignore format: preference
+		description: [
+			"現在開かれているリポジトリを題材とした技術面接を体験できるVS Codeの拡張機能です。" +
+			"技育博2025 Vol.3に向けて開発しました。",
+			"私は主にバックエンド開発を担当しました。" +
+			"保守性を高めるためにクリーンアーキテクチャを意識した設計を考案し、リアーキテクチャを実施しました。" +
+			"外部サービスへの依存をインフラ層に分離したことで、" +
+			"ビジネスロジックに影響を与えることなく、生成AIのAPIやデータベースを迅速に切り替えることができました。",
+		],
+		links: [
+			{
+				name: "YouTube",
+				url: "https://www.youtube.com/watch?v=aClg0fjz6PI",
+				backgroundColor: "bg-red-500",
+			},
+			{
+				name: "Slide",
+				url: "https://speakerdeck.com/cercil0605/repointerviewer-fa-biao-suraido",
+				backgroundColor: "bg-green-600",
+			},
+			{
+				name: "GitHub",
+				url: "https://github.com/work-in-progress-team/RepoInterviewer",
+				backgroundColor: "bg-gray-500",
+			},
+		],
+	},
+	{
+		id: "petrock",
+		title: "Petrock",
+		images: [
+			{
+				src: "/image/products/petrock/home.png",
+				width: 247,
+				height: 507,
+			},
+			{
+				src: "/image/products/petrock/todo.png",
+				width: 245,
+				height: 467,
+			},
+			{
+				src: "/image/products/petrock/chat.png",
+				width: 232,
+				height: 483,
+			},
+		],
+		category: ["app"],
+		technologies: ["aws", "typescript", "react", "fastapi"],
+		// biome-ignore format: preference
+		description: [
+			"AIエージェントによる日々のToDo管理やチャットで相談できる機能によって、" +
+			"子供が主体的にペットを飼育できるようサポートするPWA（Progressive Web Application）です。" +
+			"AWS Summit Japan 2025 生成AIエージェントハッカソンに参加して開発しました。",
+			"私は、チームがプロダクト開発に集中できるよう、技術面からチームを支えました。" +
+			"具体的には、技術選定を主導し、メンバーからの相談に応える傍ら、" +
+			"後回しにされがちな開発環境の整備やCI/CDの構築に率先して取り組みました。" +
+			"開発効率と品質に直結する重要な基盤を整えることで、チームの生産性向上に貢献しました。",
+		],
+		links: [
+			{
+				name: "YouTube",
+				url: "https://www.youtube.com/watch?v=gSazE0B8zm4",
+				backgroundColor: "bg-red-500",
+			},
+			{
+				name: "Article",
+				url: "https://aws.amazon.com/jp/blogs/news/aiagent_hackathon_report/",
+				backgroundColor: "bg-green-600",
+			},
+			{
+				name: "GitHub",
+				url: "https://github.com/ItwoonTech/petrock-nova",
+				backgroundColor: "bg-gray-500",
+			},
+		],
+	},
 	{
 		id: "dream-base",
 		title: "Dream Base",
@@ -132,7 +279,7 @@ export const products: Product[] = [
 			"react",
 			"flask",
 			"supabase",
-			"githubActions",
+			"githubactions",
 			"vercel",
 		],
 		// biome-ignore format: preference
@@ -246,7 +393,7 @@ export const products: Product[] = [
 			"hono",
 			"drizzle",
 			"vitest",
-			"githubActions",
+			"githubactions",
 			"cloudflare",
 		],
 		// biome-ignore format: preference

@@ -42,6 +42,7 @@ const ProductModal = ({ product, isOpen, onClose }: Props) => {
 				className={`
 					bg-white rounded-lg shadow-xl 
 					max-w-md lg:max-w-3xl w-full mx-4 
+					max-h-[85vh] lg:max-h-[90vh] overflow-y-auto overscroll-contain
 					transform transition-all duration-500 ease-out 
 					${isOpen ? "translate-y-0 opacity-100" : "-translate-y-16 opacity-0"}
 				`}
