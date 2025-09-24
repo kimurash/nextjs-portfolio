@@ -135,7 +135,7 @@ export const products: Product[] = [
 		technologies: ["aws", "typescript", "react", "fastapi"],
 		// biome-ignore format: preference
 		description: [
-			"AIエージェントによる日々のTODO管理やチャットで相談できる機能によって、" +
+			"AIエージェントによる日々のToDo管理やチャットで相談できる機能によって、" +
 			"子供が主体的にペットを飼育できるようサポートするPWA（Progressive Web Application）です。" +
 			"AWS Summit Japan 2025 生成AIエージェントハッカソンに参加して開発しました。",
 			"私は、チームがプロダクト開発に集中できるよう、技術面からチームを支えました。" +
@@ -145,7 +145,7 @@ export const products: Product[] = [
 		],
 		links: [
 			{
-				name: "Youtube",
+				name: "YouTube",
 				url: "https://www.youtube.com/watch?v=gSazE0B8zm4",
 				backgroundColor: "bg-red-500",
 			},
