@@ -106,7 +106,7 @@ export const certifications: Certification[] = [
 		},
 	},
 	{
-		title: "資産運用検定3級",
+		title: "資産運用検定 3級",
 		issuer: "資産運用検定協会",
 		acquiredAt: "2025年3月",
 		expiresAt: undefined,
@@ -119,7 +119,7 @@ export const certifications: Certification[] = [
 		},
 	},
 	{
-		title: "日商簿記検定試験3級",
+		title: "日商簿記検定試験 3級",
 		issuer: "日本商工会議所",
 		acquiredAt: "2025年10月",
 		expiresAt: undefined,
