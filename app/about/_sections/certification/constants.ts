@@ -128,7 +128,7 @@ export const certifications: Certification[] = [
 			src: "/image/certification/nissho-kentei.png",
 			width: 221,
 			height: 223,
-			alt: "日本商工会議所",
+			alt: "日商検定",
 		},
 	},
 ];
