@@ -118,4 +118,17 @@ export const certifications: Certification[] = [
 			alt: "資産運用検定協会",
 		},
 	},
+	{
+		title: "日商簿記3級",
+		issuer: "日本商工会議所",
+		acquiredAt: "2025年10月",
+		expiresAt: undefined,
+		color: "bg-orange-500",
+		icon: {
+			src: "/image/certification/nissho-kentei.png",
+			width: 221,
+			height: 223,
+			alt: "日本商工会議所",
+		},
+	},
 ];
