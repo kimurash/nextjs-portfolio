@@ -119,7 +119,7 @@ export const certifications: Certification[] = [
 		},
 	},
 	{
-		title: "日商簿記3級",
+		title: "日商簿記検定試験3級",
 		issuer: "日本商工会議所",
 		acquiredAt: "2025年10月",
 		expiresAt: undefined,
