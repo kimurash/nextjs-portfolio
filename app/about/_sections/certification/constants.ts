@@ -123,7 +123,7 @@ export const certifications: Certification[] = [
 		issuer: "日本商工会議所",
 		acquiredAt: "2025年10月",
 		expiresAt: undefined,
-		color: "bg-orange-500",
+		color: "bg-orange-400",
 		icon: {
 			src: "/image/certification/nissho-kentei.png",
 			width: 221,
