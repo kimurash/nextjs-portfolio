@@ -119,7 +119,7 @@ export const certifications: Certification[] = [
 		},
 	},
 	{
-		title: "日商簿記3級",
+		title: "日商簿記検定試験3級",
 		issuer: "日本商工会議所",
 		acquiredAt: "2025年10月",
 		expiresAt: undefined,
@@ -128,7 +128,7 @@ export const certifications: Certification[] = [
 			src: "/image/certification/nissho-kentei.png",
 			width: 221,
 			height: 223,
-			alt: "日本商工会議所",
+			alt: "日商検定",
 		},
 	},
 ];
