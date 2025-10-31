@@ -274,7 +274,7 @@ export const tools: TechnicalSkill[] = [
 		name: "Grafana",
 		icon: "https://skillicons.dev/icons?i=grafana&theme=light",
 		proficiency: 4,
-		tags: ["インターン"],
+		tags: ["インターン", "趣味"],
 	},
 	{
 		name: "Prisma",
@@ -285,7 +285,7 @@ export const tools: TechnicalSkill[] = [
 	{
 		name: "Prometheus",
 		icon: "https://skillicons.dev/icons?i=prometheus&theme=light",
-		proficiency: 2,
+		proficiency: 3,
 		tags: ["趣味"],
 	},
 	{

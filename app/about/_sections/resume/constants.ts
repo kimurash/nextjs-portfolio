@@ -25,6 +25,17 @@ export const educationHistory: EducationExperience[] = [
 
 export const workHistory: WorkExperience[] = [
 	{
+		period: "2025年11月〜",
+		title: "特定非営利活動法人キャリアキャンパス",
+		description: "イノベーターインターン",
+		url: "https://kigyo.city.kyoto.lg.jp/kyomachi/company/single/5328.php",
+		image: {
+			src: "/image/resume/careercampus.png",
+			width: 180,
+			height: 180,
+		},
+	},
+	{
 		period: "2025年8月中旬〜2025年10月中旬",
 		title: "株式会社スリーシェイク",
 		description: "期限付きインターンシップ",

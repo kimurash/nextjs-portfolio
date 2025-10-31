@@ -7,8 +7,8 @@ export default function CertificationSection() {
 		<section className="max-w-7xl mx-auto py-4">
 			<div className="mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="text-center mb-8">
-					<h2 className="text-3xl font-bold text-gray-900">
-						<IdCard className="inline mr-2 mb-1" size={40} />
+					<h2 className="text-4xl font-bold text-gray-900">
+						<IdCard className="inline mr-2 mb-1" size={45} />
 						Certification
 					</h2>
 				</div>
