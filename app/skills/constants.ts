@@ -202,6 +202,12 @@ export const databases: TechnicalSkill[] = [
 
 export const infrastructures: TechnicalSkill[] = [
 	{
+		name: "Ansible",
+		icon: "https://skillicons.dev/icons?i=ansible&theme=light",
+		proficiency: 3,
+		tags: ["趣味"],
+	},
+	{
 		name: "AWS",
 		icon: "https://skillicons.dev/icons?i=aws&theme=light",
 		proficiency: 4,
