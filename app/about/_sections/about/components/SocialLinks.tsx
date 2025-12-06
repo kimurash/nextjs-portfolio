@@ -30,7 +30,7 @@ const SocialLinks = () => {
 					aria-label="Zennプロフィールを開く"
 					className="rounded-full bg-slate-200 p-2.5 text-[#3EA8FF] hover:bg-slate-300 border border-slate-300 transition"
 				>
-					<SiZenn size={28} color="#3EA8FF" />
+					<SiZenn size={28} />
 				</a>
 			</div>
 		</div>
