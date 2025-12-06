@@ -16,7 +16,7 @@ const SkillsPage = () => {
 			<div className="container mx-auto px-10 lg:px-24 py-8">
 				<div className="mb-10 text-center">
 					<h1 className="text-4xl font-bold text-gray-900">
-						<Code className="inline mr-2 mb-1" size={35} />
+						<Code className="inline mr-2 mb-1" size={38} />
 						Skills
 					</h1>
 				</div>

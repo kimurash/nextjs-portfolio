@@ -292,7 +292,7 @@ export const products: Product[] = [
 		links: [
 			{
 				name: "Website",
-				url: "https://dreamsink.vercel.app/",
+				url: "https://dream-base.vercel.app/",
 				backgroundColor: "bg-blue-500",
 			},
 			{
