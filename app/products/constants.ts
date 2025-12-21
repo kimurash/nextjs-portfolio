@@ -73,6 +73,11 @@ export const technologies: Record<string, Technology> = {
 		textColor: "text-yellow-600",
 		borderColor: "border-yellow-600",
 	},
+	nextjs: {
+		name: "Next.js",
+		textColor: "text-gray-600",
+		borderColor: "border-gray-600",
+	},
 	python: {
 		name: "Python",
 		textColor: "text-blue-600",
@@ -121,6 +126,52 @@ export const technologies: Record<string, Technology> = {
 };
 
 export const products: Product[] = [
+	{
+		id: "sainara",
+		title: "Ψナラ",
+		images: [
+			{
+				src: "/image/products/sainara/index.png",
+				width: 628,
+				height: 1360,
+			},
+			{
+				src: "/image/products/sainara/rest-map.png",
+				width: 628,
+				height: 1360,
+			},
+			{
+				src: "/image/products/sainara/enjoy-map.png",
+				width: 628,
+				height: 1360,
+			},
+			{
+				src: "/image/products/sainara/recommend.png",
+				width: 628,
+				height: 1360,
+			},
+		],
+		category: ["app"],
+		technologies: ["nextjs", "typescript"],
+		description: [
+			"奈良旅行の最後を気持ちよく締めくくるための地図アプリです。" +
+			"旅行の終わりに生じる中途半端な空き時間と乗り遅れへの不安を解消するために開発しました。" +
+			"心理学の「ピーク・エンドの法則」を利用し、旅の最後の印象を良くすることで、「また奈良に来たい」と思ってもらうことを目指しています。",
+			"ことてくハッカソン2025にて開発し、アーバンデータチャレンジ（UDC）特別賞を受賞しました。"
+		],
+		links: [
+			{
+				name: "Website",
+				url: "https://sai-nara.vercel.app/",
+				backgroundColor: "bg-blue-500",
+			},
+			{
+				name: "GitHub",
+				url: "https://github.com/Eztas/SaiNara",
+				backgroundColor: "bg-gray-500",
+			}
+		],
+	},
 	{
 		id: "kaitabi20s-polling-bot",
 		title: "界タビ20s空き通知ボット",
