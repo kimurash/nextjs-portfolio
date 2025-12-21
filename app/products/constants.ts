@@ -170,7 +170,7 @@ export const products: Product[] = [
 				url: "https://github.com/Eztas/SaiNara",
 				backgroundColor: "bg-gray-500",
 			}
-		]
+		],
 	},
 	{
 		id: "kaitabi20s-polling-bot",
