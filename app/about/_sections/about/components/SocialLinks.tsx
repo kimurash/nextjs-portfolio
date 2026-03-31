@@ -1,4 +1,4 @@
-import { FaGithub, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { SiZenn } from "react-icons/si";
 
 const SocialLinks = () => {
@@ -22,6 +22,15 @@ const SocialLinks = () => {
 					className="rounded-full bg-gray-800 p-2.5 text-white hover:bg-gray-700 transition flex items-center justify-center"
 				>
 					<FaXTwitter size={28} />
+				</a>
+				<a
+					href="https://www.linkedin.com/in/shunsei-kimura/"
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label="LinkedInプロフィールを開く"
+					className="rounded-full bg-[#0B66C3] p-2.5 text-white hover:bg-[#006097] transition flex items-center justify-center"
+				>
+					<FaLinkedin size={28} />
 				</a>
 				<a
 					href="https://zenn.dev/shunsei"
