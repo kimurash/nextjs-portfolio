@@ -25,6 +25,17 @@ export const educationHistory: EducationExperience[] = [
 
 export const workHistory: WorkExperience[] = [
 	{
+		period: "2026年4月〜",
+		title: "株式会社ラクス",
+		description: "Webアプリケーションエンジニア",
+		url: "https://www.rakus.co.jp/",
+		image: {
+			src: "/image/resume/rakus.png",
+			width: 429,
+			height: 520
+		}
+	},
+	{
 		period: "2025年11月〜",
 		title: "特定非営利活動法人キャリアキャンパス",
 		description: "イノベーターインターン",
