@@ -32,8 +32,8 @@ export const workHistory: WorkExperience[] = [
 		image: {
 			src: "/images/resume/rakus.png",
 			width: 429,
-			height: 520
-		}
+			height: 520,
+		},
 	},
 	{
 		period: "2025年11月〜",
