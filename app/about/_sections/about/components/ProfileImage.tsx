@@ -5,7 +5,7 @@ const ProfileImage = () => {
 		<div className="lg:col-span-2 flex flex-col justify-center items-center space-y-6">
 			<div className="w-64 h-64 lg:w-72 lg:h-72">
 				<Image
-					src="/image/gundam-uc.jpg"
+					src="/images/gundam-uc.jpg"
 					alt="プロフィール画像"
 					width={288}
 					height={288}

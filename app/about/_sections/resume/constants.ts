@@ -6,7 +6,7 @@ export const educationHistory: EducationExperience[] = [
 		title: "京都工芸繊維大学大学院 博士前期課程",
 		description: "工芸科学科 / 設計工学域 / 情報工学専攻",
 		image: {
-			src: "/image/resume/kit.jpg",
+			src: "/images/resume/kit.jpg",
 			width: 1030,
 			height: 615,
 		},
@@ -16,7 +16,7 @@ export const educationHistory: EducationExperience[] = [
 		title: "京都工芸繊維大学 学士課程",
 		description: "工芸科学科 / 設計工学域 / 情報工学課程",
 		image: {
-			src: "/image/resume/kit.jpg",
+			src: "/images/resume/kit.jpg",
 			width: 1030,
 			height: 615,
 		},
@@ -30,7 +30,7 @@ export const workHistory: WorkExperience[] = [
 		description: "Webアプリケーションエンジニア",
 		url: "https://www.rakus.co.jp/",
 		image: {
-			src: "/image/resume/rakus.png",
+			src: "/images/resume/rakus.png",
 			width: 429,
 			height: 520
 		}
@@ -41,7 +41,7 @@ export const workHistory: WorkExperience[] = [
 		description: "イノベーターインターン",
 		url: "https://kigyo.city.kyoto.lg.jp/kyomachi/company/single/5328.php",
 		image: {
-			src: "/image/resume/careercampus.png",
+			src: "/images/resume/careercampus.png",
 			width: 180,
 			height: 180,
 		},
@@ -52,7 +52,7 @@ export const workHistory: WorkExperience[] = [
 		description: "期限付きインターンシップ",
 		url: "https://3-shake.com/",
 		image: {
-			src: "/image/resume/3shake.png",
+			src: "/images/resume/3shake.png",
 			width: 400,
 			height: 400,
 		},
@@ -63,7 +63,7 @@ export const workHistory: WorkExperience[] = [
 		description: "SUMMER INTERNSHIP 2024 バックエンドエンジニア",
 		url: "https://www.optim.co.jp/",
 		image: {
-			src: "/image/resume/optim.jpg",
+			src: "/images/resume/optim.jpg",
 			width: 1200,
 			height: 601,
 		},
@@ -74,7 +74,7 @@ export const workHistory: WorkExperience[] = [
 		description: "01立ち上げ12daysインターンシップ",
 		url: "https://speee.jp/",
 		image: {
-			src: "/image/resume/speee.jpg",
+			src: "/images/resume/speee.jpg",
 			width: 400,
 			height: 400,
 		},
@@ -85,7 +85,7 @@ export const workHistory: WorkExperience[] = [
 		description: "短期アルバイト",
 		url: "https://www.axe.bz/",
 		image: {
-			src: "/image/resume/axe.jpg",
+			src: "/images/resume/axe.jpg",
 			width: 300,
 			height: 152,
 		},
@@ -96,7 +96,7 @@ export const workHistory: WorkExperience[] = [
 		description: "塾講師",
 		url: undefined,
 		image: {
-			src: "/image/resume/kyoshin.png",
+			src: "/images/resume/kyoshin.png",
 			width: 335,
 			height: 150,
 		},
