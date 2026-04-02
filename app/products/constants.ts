@@ -73,6 +73,11 @@ export const technologies: Record<string, Technology> = {
 		textColor: "text-yellow-600",
 		borderColor: "border-yellow-600",
 	},
+	nextjs: {
+		name: "Next.js",
+		textColor: "text-gray-600",
+		borderColor: "border-gray-600",
+	},
 	python: {
 		name: "Python",
 		textColor: "text-blue-600",
@@ -122,11 +127,57 @@ export const technologies: Record<string, Technology> = {
 
 export const products: Product[] = [
 	{
+		id: "sainara",
+		title: "Ψナラ",
+		images: [
+			{
+				src: "/images/products/sainara/index.png",
+				width: 628,
+				height: 1360,
+			},
+			{
+				src: "/images/products/sainara/rest-map.png",
+				width: 628,
+				height: 1360,
+			},
+			{
+				src: "/images/products/sainara/enjoy-map.png",
+				width: 628,
+				height: 1360,
+			},
+			{
+				src: "/images/products/sainara/recommend.png",
+				width: 628,
+				height: 1360,
+			},
+		],
+		category: ["app"],
+		technologies: ["nextjs", "typescript"],
+		description: [
+			"奈良旅行の最後を気持ちよく締めくくるための地図アプリです。" +
+			"旅行の終わりに生じる中途半端な空き時間と乗り遅れへの不安を解消するために開発しました。" +
+			"心理学の「ピーク・エンドの法則」を利用し、旅の最後の印象を良くすることで、「また奈良に来たい」と思ってもらうことを目指しています。",
+			"ことてくハッカソン2025にて開発し、アーバンデータチャレンジ（UDC）特別賞を受賞しました。"
+		],
+		links: [
+			{
+				name: "Website",
+				url: "https://sai-nara.vercel.app/",
+				backgroundColor: "bg-blue-500",
+			},
+			{
+				name: "GitHub",
+				url: "https://github.com/Eztas/SaiNara",
+				backgroundColor: "bg-gray-500",
+			}
+		],
+	},
+	{
 		id: "kaitabi20s-polling-bot",
 		title: "界タビ20s空き通知ボット",
 		images: [
 			{
-				src: "/image/products/kaitabi20s-polling-bot/notification.png",
+				src: "/images/products/kaitabi20s-polling-bot/notification.png",
 				width: 267,
 				height: 104,
 			},
@@ -152,22 +203,22 @@ export const products: Product[] = [
 		title: "RepoInterviewer",
 		images: [
 			{
-				src: "/image/products/repointerviewer/home.png",
+				src: "/images/products/repointerviewer/home.png",
 				width: 1920,
 				height: 1080,
 			},
 			{
-				src: "/image/products/repointerviewer/character.png",
+				src: "/images/products/repointerviewer/character.png",
 				width: 1920,
 				height: 1080,
 			},
 			{
-				src: "/image/products/repointerviewer/interview.png",
+				src: "/images/products/repointerviewer/interview.png",
 				width: 1920,
 				height: 1080,
 			},
 			{
-				src: "/image/products/repointerviewer/result.png",
+				src: "/images/products/repointerviewer/result.png",
 				width: 1920,
 				height: 1080,
 			},
@@ -213,17 +264,17 @@ export const products: Product[] = [
 		title: "Petrock",
 		images: [
 			{
-				src: "/image/products/petrock/home.png",
+				src: "/images/products/petrock/home.png",
 				width: 247,
 				height: 507,
 			},
 			{
-				src: "/image/products/petrock/todo.png",
+				src: "/images/products/petrock/todo.png",
 				width: 245,
 				height: 467,
 			},
 			{
-				src: "/image/products/petrock/chat.png",
+				src: "/images/products/petrock/chat.png",
 				width: 232,
 				height: 483,
 			},
@@ -263,12 +314,12 @@ export const products: Product[] = [
 		title: "Dream Base",
 		images: [
 			{
-				src: "/image/products/dream-base/mine.png",
+				src: "/images/products/dream-base/mine.png",
 				width: 1157,
 				height: 801,
 			},
 			{
-				src: "/image/products/dream-base/public.png",
+				src: "/images/products/dream-base/public.png",
 				width: 1157,
 				height: 801,
 			},
@@ -307,7 +358,7 @@ export const products: Product[] = [
 		title: "CIS Lab Attendance Report",
 		images: [
 			{
-				src: "/image/products/slack-attendance-report/ranking.png",
+				src: "/images/products/slack-attendance-report/ranking.png",
 				width: 472,
 				height: 250,
 			},
@@ -333,17 +384,17 @@ export const products: Product[] = [
 		title: "ポートフォリオサイト1",
 		images: [
 			{
-				src: "/image/products/bootstrap-portfolio/hero.png",
+				src: "/images/products/bootstrap-portfolio/hero.png",
 				width: 960,
 				height: 684,
 			},
 			{
-				src: "/image/products/bootstrap-portfolio/products.png",
+				src: "/images/products/bootstrap-portfolio/products.png",
 				width: 960,
 				height: 684,
 			},
 			{
-				src: "/image/products/bootstrap-portfolio/skills.png",
+				src: "/images/products/bootstrap-portfolio/skills.png",
 				width: 960,
 				height: 684,
 			},
@@ -372,17 +423,17 @@ export const products: Product[] = [
 		title: "KITCC Library",
 		images: [
 			{
-				src: "/image/products/kitcc-library/books.png",
+				src: "/images/products/kitcc-library/books.png",
 				width: 960,
 				height: 699,
 			},
 			{
-				src: "/image/products/kitcc-library/users.png",
+				src: "/images/products/kitcc-library/users.png",
 				width: 960,
 				height: 699,
 			},
 			{
-				src: "/image/products/kitcc-library/mypage.png",
+				src: "/images/products/kitcc-library/mypage.png",
 				width: 960,
 				height: 699,
 			},
@@ -420,7 +471,7 @@ export const products: Product[] = [
 		title: "CIS Lab Smart Lock",
 		images: [
 			{
-				src: "/image/noimage.png",
+				src: "/images/noimage.png",
 				width: 760,
 				height: 460,
 			},
@@ -444,7 +495,7 @@ export const products: Product[] = [
 		title: "AtCoder Gacha",
 		images: [
 			{
-				src: "/image/products/atcoder-gacha/today.png",
+				src: "/images/products/atcoder-gacha/today.png",
 				width: 880,
 				height: 504,
 			},
@@ -470,12 +521,12 @@ export const products: Product[] = [
 		title: "AtCoder Review Bot",
 		images: [
 			{
-				src: "/image/products/atcoder-review-bot/recommendation.png",
+				src: "/images/products/atcoder-review-bot/recommendation.png",
 				width: 453,
 				height: 430,
 			},
 			{
-				src: "/image/products/atcoder-review-bot/reaction.png",
+				src: "/images/products/atcoder-review-bot/reaction.png",
 				width: 453,
 				height: 430,
 			},
@@ -501,12 +552,12 @@ export const products: Product[] = [
 		title: "マイジャグラーV 設定推定アプリ",
 		images: [
 			{
-				src: "/image/products/my-juggler5-estimator/estimation.png",
+				src: "/images/products/my-juggler5-estimator/estimation.png",
 				width: 845,
 				height: 664,
 			},
 			{
-				src: "/image/products/my-juggler5-estimator/balance.png",
+				src: "/images/products/my-juggler5-estimator/balance.png",
 				width: 845,
 				height: 664,
 			},
@@ -537,7 +588,7 @@ export const products: Product[] = [
 		title: "声優100人の話者認識",
 		// biome-ignore format: preference
 		images: [
-			{ src: "/image/noimage.png",
+			{ src: "/images/noimage.png",
 				width: 760,
 				height: 460
 			}
@@ -564,7 +615,7 @@ export const products: Product[] = [
 		title: "Todoist Reminder",
 		images: [
 			{
-				src: "/image/products/todoist-reminder/remind.png",
+				src: "/images/products/todoist-reminder/remind.png",
 				width: 922,
 				height: 615,
 			},
@@ -594,7 +645,7 @@ export const products: Product[] = [
 		// biome-ignore format: preference
 		images: [
 			{
-				src: "/image/noimage.png",
+				src: "/images/noimage.png",
 				width: 760,
 				height: 460,
 			},
@@ -622,7 +673,7 @@ export const products: Product[] = [
 		// biome-ignore format: preference
 		images: [
 			{
-				src: "/image/noimage.png",
+				src: "/images/noimage.png",
 				width: 760,
 				height: 460,
 			},
@@ -649,7 +700,7 @@ export const products: Product[] = [
 		// biome-ignore format: preference
 		images: [
 			{
-				src: "/image/noimage.png",
+				src: "/images/noimage.png",
 				width: 760,
 				height: 460,
 			},

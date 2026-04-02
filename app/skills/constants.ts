@@ -113,7 +113,7 @@ export const frameworks: TechnicalSkill[] = [
 	},
 	{
 		name: "Hono",
-		icon: "/image/skills/hono.jpg",
+		icon: "/images/skills/hono.jpg",
 		proficiency: 4,
 		tags: ["趣味"],
 	},
@@ -254,7 +254,7 @@ export const tools: TechnicalSkill[] = [
 	},
 	{
 		name: "Drizzle ORM",
-		icon: "/image/skills/drizzle.png",
+		icon: "/images/skills/drizzle.png",
 		proficiency: 4,
 		tags: ["趣味"],
 	},

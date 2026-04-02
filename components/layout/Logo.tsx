@@ -7,7 +7,7 @@ const Logo = () => {
 			<Link href="/" className="flex items-center space-x-6">
 				<div className="relative w-14 h-14 rounded-full overflow-hidden">
 					<Image
-						src="/image/gundam-uc.jpg"
+						src="/images/gundam-uc.jpg"
 						alt="ガンダムUC"
 						fill
 						className="object-cover"
