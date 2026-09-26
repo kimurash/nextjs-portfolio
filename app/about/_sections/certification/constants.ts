@@ -131,4 +131,17 @@ export const certifications: Certification[] = [
 			alt: "日商検定",
 		},
 	},
+	{
+		title: "OSS-DB Silver",
+		issuer: "LPI-Japan",
+		acquiredAt: "2026年8月",
+		expiresAt: "2031年8月",
+		color: "bg-teal-600",
+		icon: {
+			src: "/images/certification/oss-db.png",
+			width: 550,
+			height: 150,
+			alt: "OSS-DB",
+		},
+	},
 ];
