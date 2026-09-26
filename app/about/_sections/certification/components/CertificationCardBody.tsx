@@ -9,7 +9,7 @@ export const CertificationCardBody = ({ certification }: Props) => {
 	const icon = certification.icon;
 
 	return (
-		<div className="p-4 mt-2 sm:p-5 h-[160px] flex items-start relative">
+		<div className="p-4 sm:p-5 flex items-start relative">
 			<div className="w-14 h-14 sm:w-16 sm:h-16 rounded-md mr-3 sm:mr-4 flex-shrink-0 overflow-hidden bg-white">
 				<Image
 					src={icon.src}
