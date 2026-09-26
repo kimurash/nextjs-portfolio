@@ -10,7 +10,7 @@ export const CertificationCard = ({ certification }: Props) => {
 	return (
 		<div
 			className="
-			relative w-[380px] h-[220px] bg-gray-100 rounded-xl shadow-lg border-2 border-gray-300
+			relative w-[340px] bg-gray-100 rounded-xl shadow-lg border-2 border-gray-300
 			overflow-hidden
 			transition-all duration-200 ease-out
 			hover:shadow-xl
